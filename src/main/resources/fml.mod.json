@@ -1,0 +1,18 @@
+{
+	"schemaVersion": 1,
+	"id": "more_food",
+	"version": "${version}",
+	"depends": {
+		"fishmodloader": ">=3.2.1"
+	},
+	"environment": "*",
+	"name": "More Food",
+	"description": "",
+	"authors": ["阿彬"],
+	"entrypoints": {
+		"main": ["net.moddedmite.mitemod.morefood.MoreFoodInit"]
+	},
+	"mixins": [
+		"morefood.mixins.json"
+	]
+}
