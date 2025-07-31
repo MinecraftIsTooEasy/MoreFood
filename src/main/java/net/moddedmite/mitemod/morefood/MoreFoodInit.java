@@ -6,6 +6,7 @@ import net.xiaoyu233.fml.reload.event.MITEEvents;
 
 public class MoreFoodInit implements ModInitializer {
     public static final String NameSpace = "More Food";
+    public static final String resourceId = "morefood:";
 
     @Override
     public void onInitialize() {
