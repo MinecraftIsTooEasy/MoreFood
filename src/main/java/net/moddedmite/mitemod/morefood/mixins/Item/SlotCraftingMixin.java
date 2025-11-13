@@ -10,12 +10,12 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(value = SlotCrafting.class, priority = 1200)
-public abstract class CraftingMangerMixin {
+public abstract class SlotCraftingMixin {
     @Mutable @Final @Shadow private final IInventory craftMatrix;
 
     @Unique private boolean itemWasKnife = false;
 
-    protected CraftingMangerMixin(IInventory craftMatrix) {
+    protected SlotCraftingMixin(IInventory craftMatrix) {
         this.craftMatrix = craftMatrix;
     }
 

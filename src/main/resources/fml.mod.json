@@ -8,7 +8,7 @@
 	"environment": "*",
 	"name": "More Food",
 	"description": "",
-	"authors": ["阿彬"],
+	"authors": ["阿彬", "Xy_Luce"],
 	"entrypoints": {
 		"main": ["net.moddedmite.mitemod.morefood.MoreFoodInit"]
 	},

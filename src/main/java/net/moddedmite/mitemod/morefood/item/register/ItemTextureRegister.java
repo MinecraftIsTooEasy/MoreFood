@@ -17,7 +17,7 @@ public class ItemTextureRegister extends MFItems {
         event.register(NameSpace,MoreFoodInit.resourceId + "food/lampchop_stew", "lampchop_stew", bowlLampchopStew, CreativeTabs.tabFood);
         event.register(NameSpace,MoreFoodInit.resourceId + "food/bowl_fruit_salad", "bowl_fruit_salad", bowl_fruit_salad, CreativeTabs.tabFood);
         event.register(NameSpace,MoreFoodInit.resourceId + "food/bowl_horsemeat_stew", "bowl_horsemeat_stew", bowlHorsemeatStew, CreativeTabs.tabFood);
-        event.register(NameSpace,MoreFoodInit.resourceId + "food/bowl_horsemeat_stew", "bowl_horsemeat_stew", fried_egg, CreativeTabs.tabFood);
+        event.register(NameSpace,MoreFoodInit.resourceId + "food/fried_egg", "fried_egg", fried_egg, CreativeTabs.tabFood);
         event.register(NameSpace,MoreFoodInit.resourceId + "food/bowl_melon_salad", "bowl_melon_salad", bowl_melon_salad, CreativeTabs.tabFood);
         event.register(NameSpace,MoreFoodInit.resourceId + "food/bowl_carrot_soup", "bowl_carrot_soup", bowl_carrot_soup, CreativeTabs.tabFood);
         event.register(NameSpace,MoreFoodInit.resourceId + "food/carrot_cake", "carrot_cake", carrot_cake, CreativeTabs.tabFood);
@@ -36,5 +36,10 @@ public class ItemTextureRegister extends MFItems {
         event.register(NameSpace,MoreFoodInit.resourceId + "food/jelly", "jelly", jelly, CreativeTabs.tabFood);
         event.register(NameSpace,MoreFoodInit.resourceId + "food/kebabs", "kebabs", kebabs, CreativeTabs.tabFood);
         event.register(NameSpace,MoreFoodInit.resourceId + "food/cooked_chicken_skewer", "cooked_chicken_skewer", cooked_chicken_skewer, CreativeTabs.tabFood);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/squid_meat", "squid_meat", squid_meat, CreativeTabs.tabFood);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/squid_meat_cooked", "squid_meat_cooked", squid_meat_cooked, CreativeTabs.tabFood);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/squid_sashimi", "squid_sashimi", squid_sashimi, CreativeTabs.tabFood);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/seafood_feast", "seafood_feast", seafood_feast, CreativeTabs.tabFood);
+
     }
 }

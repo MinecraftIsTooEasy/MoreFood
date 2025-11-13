@@ -11,8 +11,10 @@ public class FurnaceRecipesExtend extends MFItems {
         FurnaceRecipes.smelting().addSmelting(egg.itemID,new ItemStack(fried_egg));
         FurnaceRecipes.smelting().addSmelting(bacon.itemID, new ItemStack(cooked_bacon));
         FurnaceRecipes.smelting().addSmelting(Item.seeds.itemID, new ItemStack(roastedseeds.itemID));
+        FurnaceRecipes.smelting().addSmelting(squid_meat.itemID, new ItemStack(squid_meat_cooked.itemID));
         ItemFood.setCookingResult((ItemFood) horse_meat, (ItemFood) horse_meat_cooked, 6);
         ItemFood.setCookingResult((ItemFood) bacon, (ItemFood) cooked_bacon, 6 );
-        ItemFood.setCookingResult((ItemFood )seeds, (ItemFood) roastedseeds, 2);
+        ItemFood.setCookingResult((ItemFood) seeds, (ItemFood) roastedseeds, 2);
+        ItemFood.setCookingResult((ItemFood) squid_meat, (ItemFood) squid_meat_cooked, 5);
     }
 }

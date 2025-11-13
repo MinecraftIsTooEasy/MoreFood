@@ -25,6 +25,10 @@ public class RecipeRegister extends MFItems {
         register.registerShapelessRecipe(new ItemStack(blueberry_pie, 1), true, Item.blueberries, Item.sugar, Item.flour, Item.egg);
         register.registerShapelessRecipe(new ItemStack(bowl_netherStalkSeeds_soup, 1), true, Item.bowlEmpty, new ItemStack(netherStalkSeeds, 3));
         register.registerShapelessRecipe(new ItemStack(hamburger, 1), true, Item.bread, Item.bread, Item.onion, Item.beefCooked, MFItems.cooked_bacon, Item.carrot);
+
+        register.registerShapelessRecipe(new ItemStack(seafood_feast, 1), true, Item.bowlEmpty, MFItems.squid_meat,MFItems.squid_meat,MFItems.squid_meat, MFItems.squid_sashimi, Item.fishRaw, Item.onion,Item.egg);
+
+
 //        register.registerShapelessRecipe(new ItemStack(bacon, 2), true, Item.porkRaw,Item.knifeFlint);
 //        register.registerShapelessRecipe(new ItemStack(beef_nugget,4),true,Item.beefCooked,Item.knifeFlint);
 //        register.registerShapelessRecipe(new ItemStack(mutton_nugget,3),true,Item.lambchopCooked,Item.knifeFlint);

@@ -32,3 +32,7 @@ item.mutton_nugget.name=羊肉粒
 item.beef_nugget.name=牛肉粒
 item.kebabs.name=羊肉串
 item.cooked_chicken_skewer.name=鸡肉串
+item.squid_meat.name=鱿鱼须
+item.squid_meat_cooked.name=烤鱿鱼须
+item.squid_sashimi.name=鱿鱼刺身
+item.seafood_feast.name=海鲜大餐

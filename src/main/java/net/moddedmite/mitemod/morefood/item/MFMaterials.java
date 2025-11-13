@@ -25,6 +25,7 @@ public class MFMaterials extends Material {
     public static Material chores;
     public static Material jelly;
     public static Material kebabs;
+    public static Material seafood_feast;
 
     public MFMaterials(EnumEquipmentMaterial enum_crafting_material) {
         super(enum_crafting_material);
@@ -49,5 +50,6 @@ public class MFMaterials extends Material {
         chores = new MaterialFood("chores").setHarmedByPepsin();
         jelly = new MaterialFood("jelly").setHarmedByPepsin();
         kebabs = new MaterialFood("kebabs").setHarmedByPepsin();
+        seafood_feast = new MaterialFood("seafood_feast").setHarmedByPepsin();
     }
 }
