@@ -28,6 +28,7 @@ public class MFMaterials extends Material {
     public static Material seafood_feast;
     public static Material squid_sashimi_cooked;
     public static Material bread_zip;
+    public static Material baguette;
     public static Material dried_flesh;
     public static Material lollipop;
 
@@ -59,7 +60,9 @@ public class MFMaterials extends Material {
         appleRed = new MaterialFood("appleRed").setHarmedByPepsin();
         squid_sashimi_cooked = new MaterialFood("squid_sashimi_cooked").setHarmedByPepsin();
         bread_zip = new MaterialFood("bread_zip").setHarmedByPepsin();
+        baguette = new MaterialFood("baguette").setHarmedByPepsin();
         seeds = new MaterialFood("seeds").setHarmedByPepsin();
         dried_flesh = new MaterialFood("dried_flesh").setHarmedByPepsin();
+        lollipop = new MaterialFood("lollipop").setHarmedByPepsin();
     }
 }

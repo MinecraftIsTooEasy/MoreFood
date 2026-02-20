@@ -14,6 +14,7 @@ public class MoreFoodInit implements ModInitializer {
     @Override
     public void onInitialize() {
         MITEEvents.MITE_EVENT_BUS.register(new MFEventListen());
+        MFEventListen.registerRICEvents();
         ModResourceManager.addResourcePackDomain("morefood");
 //        allocator = new IDAllocator(modId, 0, 64);
     }

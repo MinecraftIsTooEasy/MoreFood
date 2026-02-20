@@ -8,11 +8,17 @@
 	"environment": "*",
 	"name": "More Food",
 	"description": "",
-	"authors": ["阿彬", "Xy_Luce"],
+	"authors": [
+      "阿彬",
+      "Xy_Luce",
+      "Inf1nlty",
+      "huanglanmu"
+    ],
 	"entrypoints": {
 		"main": ["net.moddedmite.mitemod.morefood.MoreFoodInit"]
 	},
 	"mixins": [
 		"morefood.mixins.json"
-	]
+	],
+  "accessWidener": "morefood.accessWidener"
 }
