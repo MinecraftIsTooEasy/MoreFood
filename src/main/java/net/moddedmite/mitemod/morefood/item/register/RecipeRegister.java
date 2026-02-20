@@ -2,6 +2,7 @@ package net.moddedmite.mitemod.morefood.item.register;
 
 import net.moddedmite.mitemod.morefood.item.MFItems;
 import net.minecraft.*;
+import net.xiaoyu233.fml.FishModLoader;
 import net.xiaoyu233.fml.reload.event.RecipeRegistryEvent;
 
 public class RecipeRegister extends MFItems {
@@ -15,6 +16,9 @@ public class RecipeRegister extends MFItems {
         register.registerShapelessRecipe(new ItemStack(bowlPorkchopStew, 1), true, bowlWater, Item.porkCooked, Item.carrot, Item.potato, Block.mushroomBrown);
         register.registerShapelessRecipe(new ItemStack(bowl_fruit_salad, 1), true, Item.appleRed, Item.bowlEmpty, Item.blueberries, Block.plantYellow);
         register.registerShapelessRecipe(new ItemStack(bowlHorsemeatStew, 1), true, MFItems.horse_meat_cooked, Item.bowlWater, Block.mushroomBrown, Item.onion);
+        if (FishModLoader.hasMod("mite-itf-reborn")) {
+            register.registerShapelessRecipe(new ItemStack(bowlHorsemeatStew, 1), true, net.oilcake.mitelros.registry.item.Items.horse_meat_cooked, Item.bowlWater, Block.mushroomBrown, Item.onion);
+        }
         register.registerShapelessRecipe(new ItemStack(bowl_melon_salad, 1), true, Item.bowlEmpty, Item.melon, Item.melon, Item.melon);
         register.registerShapelessRecipe(new ItemStack(bowl_carrot_soup, 1), true, Item.bowlEmpty, Item.carrot, Item.carrot, Item.carrot);
         register.registerShapelessRecipe(new ItemStack(carrot_cake, 1), true, Item.carrot, Item.flour, Item.egg, Item.sugar);
