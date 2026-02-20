@@ -26,6 +26,11 @@ public class MFMaterials extends Material {
     public static Material jelly;
     public static Material kebabs;
     public static Material seafood_feast;
+    public static Material squid_sashimi_cooked;
+    public static Material bread_zip;
+    public static Material dried_flesh;
+    public static Material lollipop;
+
 
     public MFMaterials(EnumEquipmentMaterial enum_crafting_material) {
         super(enum_crafting_material);
@@ -51,5 +56,10 @@ public class MFMaterials extends Material {
         jelly = new MaterialFood("jelly").setHarmedByPepsin();
         kebabs = new MaterialFood("kebabs").setHarmedByPepsin();
         seafood_feast = new MaterialFood("seafood_feast").setHarmedByPepsin();
+        appleRed = new MaterialFood("appleRed").setHarmedByPepsin();
+        squid_sashimi_cooked = new MaterialFood("squid_sashimi_cooked").setHarmedByPepsin();
+        bread_zip = new MaterialFood("bread_zip").setHarmedByPepsin();
+        seeds = new MaterialFood("seeds").setHarmedByPepsin();
+        dried_flesh = new MaterialFood("dried_flesh").setHarmedByPepsin();
     }
 }

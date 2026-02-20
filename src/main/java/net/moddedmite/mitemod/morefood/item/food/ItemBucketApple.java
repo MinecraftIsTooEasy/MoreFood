@@ -1,11 +1,12 @@
 package net.moddedmite.mitemod.morefood.item.food;
 
 import net.minecraft.*;
+import net.moddedmite.mitemod.morefood.creativetab.MFCreativeTab;
 
 public class ItemBucketApple extends ItemBucketMilk {
     public ItemBucketApple(int id, Material material) {
         super(id, material);
-        this.setCreativeTab(CreativeTabs.tabFood);
+        this.setCreativeTab(MFCreativeTab.TAB);
         this.setFoodValue(4, 4, false, false, false);
         this.setPlantProduct();
         this.setAlwaysEdible();

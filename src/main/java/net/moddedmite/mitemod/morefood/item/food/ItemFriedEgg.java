@@ -1,12 +1,13 @@
 package net.moddedmite.mitemod.morefood.item.food;
 
 import net.minecraft.*;
+import net.moddedmite.mitemod.morefood.creativetab.MFCreativeTab;
 
 public class ItemFriedEgg extends ItemEgg {
     public ItemFriedEgg(int par1) {
         super(par1);
         this.setMaxStackSize(16);
-        this.setCreativeTab(CreativeTabs.tabFood);
+        this.setCreativeTab(MFCreativeTab.TAB);
         this.setAnimalProduct();
         this.setCraftingDifficultyAsComponent(25.0F);
 
