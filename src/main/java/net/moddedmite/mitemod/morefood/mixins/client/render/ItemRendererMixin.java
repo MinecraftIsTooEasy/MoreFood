@@ -37,9 +37,9 @@ public class ItemRendererMixin {
     private void renderBaguetteHehe(EntityLivingBase entity, ItemStack stack, int pass, CallbackInfo ci) {
         if (stack != null && stack.getItem() instanceof ItemBaguette) {
 
-            Icon icon = entity.getItemIcon(stack, pass);
+            entity.getItemIcon(stack, pass);
 
-            BaguetteRenderer.renderBaguette(stack, icon);
+            BaguetteRenderer.renderBaguette();
             ci.cancel();
 
             GL11.glDisable(32826);

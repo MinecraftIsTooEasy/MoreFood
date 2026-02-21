@@ -1,7 +1,6 @@
 package net.moddedmite.mitemod.morefood.item.food;
 
 import net.minecraft.*;
-import net.moddedmite.mitemod.morefood.creativetab.MFCreativeTab;
 import net.moddedmite.mitemod.morefood.api.IUseWarmup;
 import net.moddedmite.mitemod.morefood.item.MFMaterials;
 
@@ -9,7 +8,7 @@ public class ItemBaguette extends ItemFood implements IUseWarmup {
 
     public ItemBaguette(int id) {
         super(id, MFMaterials.baguette, 20, 10, false, false, false, "baguette");
-        setCreativeTab(MFCreativeTab.TAB);
+        this.setReachBonus(10.0F);
     }
 
 //    @Override
@@ -19,6 +18,26 @@ public class ItemBaguette extends ItemFood implements IUseWarmup {
 //        if (!world.isRemote)
 //            player.getFoodStats().setSatiation(20, true);
 //    }
+
+    @Override
+    public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker)
+    {
+        boolean result = super.hitEntity(stack, target, attacker);
+
+        if (attacker == null || attacker.worldObj == null) return result;
+
+        if (!(attacker instanceof EntityPlayer) || !((EntityPlayer) attacker).capabilities.isCreativeMode)
+        {
+            if (attacker.worldObj.rand.nextFloat() < 0.02F)
+            {
+                stack.stackSize--;
+
+                attacker.worldObj.playSoundAtEntity(attacker, "random.break", 0.8F, 0.8F + attacker.worldObj.rand.nextFloat() * 0.4F);
+            }
+        }
+
+        return result;
+    }
 
     @Override
     public int getMaxItemUseDuration(ItemStack par1ItemStack) {

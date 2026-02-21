@@ -112,24 +112,28 @@ public class BaguetteRenderer {
         GL11.glPopMatrix();
     }
 
-    public static void renderBaguette(ItemStack stack, Icon icon) {
+    public static void renderBaguette() {
         TextureManager manager = Minecraft.getMinecraft().getTextureManager();
 
-        manager.bindTexture(manager.getResourceLocation(stack.getItemSpriteNumber()));
-        Tessellator var6 = Tessellator.instance;
-        float var7 = icon.getMinU();
-        float var8 = icon.getMaxU();
-        float var9 = icon.getMinV();
-        float var10 = icon.getMaxV();
-        float var11 = 0.0F;
-        float var12 = 0.3F;
+        manager.bindTexture(new ResourceLocation("morefood", "textures/items/food/baguette.png"));
+
+        Tessellator tess = Tessellator.instance;
+
+        float uMin = 0.0F;
+        float uMax = 1.0F;
+        float vMin = 0.0F;
+        float vMax = 1.0F;
+
+        int texWidth = 256;
+        int texHeight = 256;
+
         GL11.glEnable(32826);
-        GL11.glTranslatef(-var11, -var12, 0.0F);
+        GL11.glTranslatef(-0.0F, -0.3F, 0.0F);
         GL11.glRotatef(50.0F, 0.0F, 1.0F, 0.0F);
         GL11.glRotatef(335.0F, 0.0F, 0.0F, 1.0F);
         GL11.glScalef(16F, 16F, 1F);
         GL11.glTranslatef(-0.9375F, -0.0625F, 0.0F);
         GL11.glColor3f(1.0F, 1.0F, 1.0F);
-        ItemRenderer.renderItemIn2D(var6, var8, var9, var7, var10, icon.getIconWidth(), icon.getIconHeight(), 0.0625F);
+        ItemRenderer.renderItemIn2D(tess, uMax, vMin, uMin, vMax, texWidth, texHeight, 0.0625F);
     }
 }

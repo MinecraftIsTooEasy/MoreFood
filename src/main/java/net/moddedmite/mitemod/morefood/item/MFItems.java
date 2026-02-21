@@ -3,6 +3,7 @@ package net.moddedmite.mitemod.morefood.item;
 import net.moddedmite.mitemod.morefood.item.food.ItemBaguette;
 import net.moddedmite.mitemod.morefood.item.food.ItemFriedEgg;
 import net.minecraft.*;
+import net.moddedmite.mitemod.morefood.item.food.ItemLollipop;
 import net.xiaoyu233.fml.reload.utils.IdUtil;
 
 public class MFItems extends Item {
@@ -40,8 +41,8 @@ public class MFItems extends Item {
     public static final ItemBowl seafood_feast = (ItemBowl) (new ItemBowl(getItemId("seafood_feast"), MFMaterials.seafood_feast, "seafood_feast")).setFoodValue(20, 20, true, true, true).setPlantProduct().setAnimalProduct().setUnlocalizedName("porkchopStew").setMaxStackSize(4);
     public static final ItemFood bread_zip = (ItemFood) (new ItemFood(getItemId("bread_zip"), MFMaterials.bread_zip, 72, 18, false, false, false, "bread_zip")).setMaxStackSize(16);
     public static final ItemFood baguette = (ItemFood) new ItemBaguette(getItemId("baguette")).setUnlocalizedName("baguette");
-    public static final ItemFood dried_flesh = (ItemFood) (new ItemFood(getItemId("dried_flesh"), MFMaterials.dried_flesh, 6, 1, true, false, true, "dried_flesh")).setAnimalProduct().setMaxStackSize(16);
-    public static final ItemFood lollipop = (ItemFood) (new ItemFood(getItemId("lollipop"), MFMaterials.lollipop, 2, 4, 4000, true, false, true, "lollipop")).setUnlocalizedName("lollipop");
+    public static final ItemFood dried_flesh = (ItemFood) (new ItemFood(getItemId("dried_flesh"), MFMaterials.dried_flesh, 6, 2, 250, true, false, false, "dried_flesh")).setAnimalProduct().setMaxStackSize(16);
+    public static final ItemFood lollipop = (ItemFood) new ItemLollipop(getItemId("lollipop"), 2, 6, 4000, false, false, false, "lollipop").setUnlocalizedName("lollipop");
 
     private static int getItemId(String contentName) {
         return IdUtil.getNextItemID();
