@@ -1,3 +1,5 @@
+item.FlintKitchenKnife.name=燧石厨刀
+item.IronKitchenKnife.name=铁厨刀
 item.horse_meat.name=马肉
 item.horse_meat_cooked.name=熟马肉
 item.bowl_cactus_soup.name=仙人掌汤
@@ -41,5 +43,12 @@ item.bread_zip.name=压缩面包
 item.baguette.name=法棍
 item.dried_flesh.name=肉干
 item.lollipop.name=棒棒糖
+item.blaze_apple.name=烈焰金苹果
+item.stuffed_potato.name=填馅马铃薯
+item.shepherds_pie.name=牧羊人派
+item.egg_sandwich.name=鸡蛋三明治
+item.raw_pasta.name=生意面
+item.raw_pasta_cooked.name=熟意面
+item.squid_ink_pasta.name=鱿鱼墨面
 
 itemGroup.MoreFood=更多食物

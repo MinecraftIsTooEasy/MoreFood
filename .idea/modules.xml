@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MoreFood.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MoreFood.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MoreFood.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MoreFood.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.MinecraftIsTooEasy.MoreFood.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.MinecraftIsTooEasy.MoreFood.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.MinecraftIsTooEasy.MoreFood.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.MinecraftIsTooEasy.MoreFood.test.iml" />
     </modules>
   </component>
 </project>
