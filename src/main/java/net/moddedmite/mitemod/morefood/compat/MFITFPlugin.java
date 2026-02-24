@@ -24,9 +24,10 @@ public class MFITFPlugin implements ITFPlugin {
         registry.registerItemWater(MFItems.squid_sashimi, 1);
         registry.registerItemWater(MFItems.squid_meat, 1);
         registry.registerMaterialWater(MFMaterials.seafood_feast, 8);
-        registry.registerMaterialWater(MFMaterials.bread_zip, -9);
+        registry.registerMaterialWater(MFMaterials.bread_zip, -6);
         registry.registerMaterialWater(MFMaterials.baguette, -3);
         registry.registerMaterialWater(MFMaterials.dried_flesh, -1);
         registry.registerMaterialWater(MFMaterials.lollipop, -1);
+        registry.registerMaterialWater(MFMaterials.blaze_apple, -4);
     }
 }
