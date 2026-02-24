@@ -10,7 +10,6 @@ public class UseTickListener implements ITickListener {
 
     @Override
     public void onEntityPlayerTick(EntityPlayer player) {
-        if (player == null || player.worldObj == null) return;
 
         ItemStack current = player.inventory.getCurrentItemStack();
         if (current == null) return;

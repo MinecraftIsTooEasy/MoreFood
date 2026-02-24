@@ -47,13 +47,13 @@ public class RecipeRegister extends MFItems {
 //        register.registerShapelessRecipe(new ItemStack(mutton_nugget,3),true,Item.knifeFlint,Item.lambchopCooked);
         register.registerShapelessRecipe(new ItemStack(chores, 1), true, MFItems.beef_nugget, MFItems.mutton_nugget, MFItems.roastedseeds, new ItemStack(Item.dyePowder, 1, 15));
         register.registerShapelessRecipe(new ItemStack(jelly, 1), true, new ItemStack(Item.slimeBall, 4));
-        register.registerShapedRecipe(new ItemStack(kebabs, 1), true, " A ", " B ", " C ", 'A', Item.lambchopCooked, 'B', Block.mushroomBrown, 'C', Item.stick);
-        register.registerShapedRecipe(new ItemStack(bread_zip, 1), true, "aaa", "aaa", "aaa", 'a', Item.bread);
+        register.registerShapedRecipe(new ItemStack(kebabs, 1), true, " L ", " M ", " S ", 'L', Item.lambchopCooked, 'M', Block.mushroomBrown, 'S', Item.stick);
+        register.registerShapedRecipe(new ItemStack(bread_zip, 1), true, "BBB", "BBB", "BBB", 'B', Item.bread);
         register.registerShapedRecipe(new ItemStack(baguette, 1), true, "  B", " B ", "B  ", 'B', Item.bread);
-        register.registerShapedRecipe(new ItemStack(lollipop, 1), true, " aa", " aa", "b  ", 'a', Item.sugar, 'b', Item.stick);
-        register.registerShapedRecipe(new ItemStack(shepherds_pie, 4), true, "aba", "ccc", "dbd", 'a', Item.bakedPotato, 'b', Item.bowlMilk, 'c', Item.lambchopCooked, 'd', Item.onion);
+        register.registerShapedRecipe(new ItemStack(lollipop, 1), true, " AA", " AA", "S  ", 'A', Item.sugar, 'S', Item.stick);
+        register.registerShapedRecipe(new ItemStack(shepherds_pie, 4), true, "PMP", "LLL", "OMO", 'P', Item.bakedPotato, 'M', Item.bowlMilk, 'L', Item.lambchopCooked, 'O', Item.onion);
 
-        register.registerShapedRecipe(new ItemStack(cooked_chicken_skewer, 1), true, " A ", " B ", " C ", 'A', Item.chickenCooked, 'B', Block.mushroomBrown, 'C', Item.stick);
+        register.registerShapedRecipe(new ItemStack(cooked_chicken_skewer, 1), true, " C ", " M ", " S ", 'C', Item.chickenCooked, 'M', Block.mushroomBrown, 'S', Item.stick);
 
         for (Item item : Item.itemsList) {
             if (item instanceof ItemDagger dagger) {

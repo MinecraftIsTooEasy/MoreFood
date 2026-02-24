@@ -1,25 +1,30 @@
 {
-	"schemaVersion": 1,
-	"id": "more_food",
-	"version": "${version}",
-	"depends": {
-		"fishmodloader": ">=3.2.1",
-      "rusted_iron_core": ">=1.5.0"
-	},
-	"environment": "*",
-	"name": "More Food",
-	"description": "",
-	"authors": [
-      "阿彬",
-      "Xy_Luce",
-      "Inf1nlty",
-      "huanglanmu"
+  "schemaVersion": 1,
+  "id": "more_food",
+  "version": "${version}",
+  "depends": {
+    "fishmodloader": ">=3.2.1",
+    "rusted_iron_core": ">=1.5.0"
+  },
+  "environment": "*",
+  "name": "More Food",
+  "description": "",
+  "authors": [
+    "阿彬",
+    "Xy_Luce",
+    "Inf1nlty",
+    "huanglanmu"
+  ],
+  "entrypoints": {
+    "main": [
+      "net.moddedmite.mitemod.morefood.MoreFoodInit"
     ],
-	"entrypoints": {
-		"main": ["net.moddedmite.mitemod.morefood.MoreFoodInit"]
-	},
-	"mixins": [
-		"morefood.mixins.json"
-	],
+    "itf-reborn": [
+      "net.moddedmite.mitemod.morefood.compat.MFITFPlugin"
+    ]
+  },
+  "mixins": [
+    "morefood.mixins.json"
+  ],
   "accessWidener": "morefood.accessWidener"
 }
