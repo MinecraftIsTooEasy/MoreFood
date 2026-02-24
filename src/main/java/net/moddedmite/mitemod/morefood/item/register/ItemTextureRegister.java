@@ -44,6 +44,13 @@ public class ItemTextureRegister extends MFItems {
         event.register(NameSpace, MoreFoodInit.resourceId + "food/bread_zip", "bread_zip", bread_zip, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/baguette_item", "baguette", baguette, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/dried_flesh", "dried_flesh", dried_flesh, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/stuffed_potato", "stuffed_potato", stuffed_potato, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/shepherds_pie", "shepherds_pie", shepherds_pie, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/egg_sandwich", "egg_sandwich", egg_sandwich, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/raw_pasta", "raw_pasta", raw_pasta, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/raw_pasta_cooked", "raw_pasta_cooked", raw_pasta_cooked, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/squid_ink_pasta", "squid_ink_pasta", squid_ink_pasta, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/lollipop", "lollipop", lollipop, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/blaze_apple", "blaze_apple", blaze_apple, MFCreativeTab.TAB);
     }
 }

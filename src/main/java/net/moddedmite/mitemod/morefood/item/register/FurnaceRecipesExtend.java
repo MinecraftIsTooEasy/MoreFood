@@ -14,7 +14,9 @@ public class FurnaceRecipesExtend extends MFItems {
         FurnaceRecipes.smelting().addSmelting(squid_meat.itemID, new ItemStack(squid_meat_cooked.itemID));
         FurnaceRecipes.smelting().addSmelting(squid_sashimi.itemID, new ItemStack(squid_sashimi_cooked.itemID));
         FurnaceRecipes.smelting().addSmelting(dried_flesh.itemID, new ItemStack(leather.itemID));
-        ItemFood.setCookingResult((ItemFood) horse_meat, (ItemFood) horse_meat_cooked, 6);
+        FurnaceRecipes.smelting().addSmelting(raw_pasta.itemID, new ItemStack(raw_pasta_cooked));
+
+        ItemFood.setCookingResult(horse_meat, horse_meat_cooked, 6);
         ItemFood.setCookingResult(bacon, cooked_bacon, 6);
         ItemFood.setCookingResult((ItemFood) seeds, roastedseeds, 1);
         ItemFood.setCookingResult((ItemFood) squid_meat, (ItemFood) squid_meat_cooked, 5);

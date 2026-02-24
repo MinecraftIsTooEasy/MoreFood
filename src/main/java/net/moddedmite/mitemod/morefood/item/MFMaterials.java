@@ -1,8 +1,6 @@
 package net.moddedmite.mitemod.morefood.item;
 
-import net.minecraft.EnumEquipmentMaterial;
-import net.minecraft.Material;
-import net.minecraft.MaterialFood;
+import net.minecraft.*;
 
 public class MFMaterials extends Material {
     public static final Material porkchop_stew;
@@ -30,7 +28,14 @@ public class MFMaterials extends Material {
     public static Material bread_zip;
     public static Material baguette;
     public static Material dried_flesh;
+    public static Material stuffed_potato;
     public static Material lollipop;
+    public static Material blaze_apple;
+    public static Material shepherds_pie;
+    public static Material egg_sandwich;
+    public static Material raw_pasta;
+    public static Material raw_pasta_cooked;
+    public static Material squid_ink_pasta;
 
 
     public MFMaterials(EnumEquipmentMaterial enum_crafting_material) {
@@ -63,6 +68,13 @@ public class MFMaterials extends Material {
         baguette = new MaterialFood("baguette").setHarmedByPepsin();
         seeds = new MaterialFood("seeds").setHarmedByPepsin();
         dried_flesh = new MaterialFood("dried_flesh").setHarmedByPepsin();
+        stuffed_potato = new MaterialFood("stuffed_potato").setHarmedByPepsin();
+        shepherds_pie = new MaterialFood("shepherds_pie").setHarmedByPepsin();
+        egg_sandwich = new MaterialFood("egg_sandwich").setHarmedByPepsin();
+        raw_pasta = new MaterialFood("raw_pasta").setHarmedByPepsin();
+        raw_pasta_cooked = new MaterialFood("raw_pasta_cooked").setHarmedByPepsin();
+        squid_ink_pasta = new MaterialFood("squid_ink_pasta").setHarmedByPepsin();
         lollipop = new MaterialFood("lollipop").setHarmedByPepsin();
+        blaze_apple = new MaterialFood("blaze_apple").setHarmedByPepsin();
     }
 }

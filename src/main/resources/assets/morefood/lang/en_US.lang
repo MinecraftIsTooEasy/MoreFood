@@ -1,3 +1,5 @@
+item.IronKitchenKnife.name=Iron Kitchen Knife
+item.FlintKitchenKnife.name=Flint Kitchen Knife
 item.horse_meat.name=Horse Meat
 item.horse_meat_cooked.name=Cooked Horse Meat
 item.bowl_cactus_soup.name=Bowl of Cactus Soup
@@ -41,5 +43,12 @@ item.bread_zip.name=Compressed Bread
 item.baguette.name=Baguette
 item.dried_flesh.name=Jerky
 item.lollipop.name=Lollipop
+item.blaze_apple.name=Blaze Gold Apple
+item.stuffed_potato.name=Stuffed Potato
+item.shepherds_pie.name=Shepherd's Pie
+item.egg_sandwich.name=Egg Sandwich
+item.raw_pasta.name=Raw Pasta
+item.raw_pasta_cooked.name=Cooked Pasta
+item.squid_ink_pasta.name=Squid Ink Pasta
 
 itemGroup.MoreFood=More Food
