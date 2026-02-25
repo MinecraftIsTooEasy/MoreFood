@@ -37,7 +37,7 @@ public class MFItems extends Item {
     public static final Item squid_meat = new ItemMeat(getItemId("squid_meat"), 3, 3, true, false, "squid_meat");
     public static final Item squid_meat_cooked = new ItemMeat(getItemId("squid_meat_cooked"), 6, 6, true, true, "squid_meat_cooked");
     public static final ItemBowl seafood_feast = (ItemBowl) (new ItemBowl(getItemId("seafood_feast"), MFMaterials.seafood_feast, "seafood_feast")).setFoodValue(20, 20, true, true, true).setPlantProduct().setAnimalProduct().setUnlocalizedName("porkchopStew").setMaxStackSize(4);
-    public static final ItemFood bread_zip = (ItemFood) (new ItemBreadZip(getItemId("bread_zip"), MFMaterials.bread_zip.getMaterialMobility(), 72, 18, false, false, false, "bread_zip")).setMaxStackSize(16);
+    public static final ItemFood bread_zip = (ItemFood) (new ItemBreadZip(getItemId("bread_zip"), MFMaterials.bread_zip.getMaterialMobility(), 18, 0, false, false, false, "bread_zip")).setAnimalProduct().setMaxStackSize(16);
     public static final ItemFood baguette = (ItemFood) new ItemBaguette(getItemId("baguette")).setUnlocalizedName("baguette");
     public static final ItemFood dried_flesh = (ItemFood) (new ItemFood(getItemId("dried_flesh"), MFMaterials.dried_flesh, 6, 2, 250, true, false, false, "dried_flesh")).setAnimalProduct().setMaxStackSize(16);
     public static final ItemFood stuffed_potato = (ItemFood) (new ItemFood(getItemId("stuffed_potato"), MFMaterials.stuffed_potato, 15, 13, true, false, true, "stuffed_potato")).setUnlocalizedName("stuffed_potato");
@@ -47,8 +47,10 @@ public class MFItems extends Item {
     public static final ItemFood raw_pasta_cooked = (ItemFood) (new ItemFood(getItemId("raw_pasta_cooked"), MFMaterials.raw_pasta_cooked, 3, 2, false, false, false, "raw_pasta_cooked")).setUnlocalizedName("raw_pasta_cooked");
     public static final ItemBowl squid_ink_pasta = (ItemBowl) (new ItemBowl(getItemId("squid_ink_pasta"), MFMaterials.seafood_feast, "squid_ink_pasta")).setFoodValue(13, 13, true, false, true).setPlantProduct().setAnimalProduct().setUnlocalizedName("porkchopStew").setMaxStackSize(4);
     public static final ItemFood lollipop = (ItemFood) new ItemLollipop(getItemId("lollipop"), 2, 6, 4000, false, false, false, "lollipop").setUnlocalizedName("lollipop");
-    public static final ItemFood blaze_apple = (ItemFood) (new ItemMagicFood(getItemId("blaze_apple"), 4, 2, 1000, false,false, false, "blaze_apple")).setPlantProduct().setMaxStackSize(16);
-
+    public static final ItemFood blaze_apple = (ItemFood) (new ItemBlazeApple(getItemId("blaze_apple"), 2, 1, 1000, false,false, false, "blaze_apple")).setPlantProduct().setMaxStackSize(16);
+    public static final ItemFood ancient_metal_melon_slice = (ItemFood) (new ItemAncientMetalMelonSlice(getItemId("ancient_metal_melon_slice"), 2, 1, 1000, false,false, false, "ancient_metal_melon_slice")).setPlantProduct().setMaxStackSize(16);
+    public static final ItemFood meat_jelly = (ItemFood) (new ItemFood(getItemId("meat_jelly"), MFMaterials.meat_jelly, 2, 2, true, false, false, "meat_jelly")).setMaxStackSize(16);
+    public static final ItemFood bedrock_apple = (ItemFood) (new ItemBedrockApple(getItemId("bedrock_apple"), 2, 1, 1000, false,false, false, "bedrock_apple")).setPlantProduct().setMaxStackSize(16);
 
     private static int getItemId(String contentName) {
         return IdUtil.getNextItemID();
