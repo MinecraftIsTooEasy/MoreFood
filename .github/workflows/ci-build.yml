@@ -26,6 +26,17 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
+      - name: Ensure custom jar available for Loom
+        run: |
+          set -e
+          MITE_VERSION=1.6.4-MITE
+          CACHE_DIR="$HOME/.gradle/caches/fml-loom/${MITE_VERSION}"
+          mkdir -p "$CACHE_DIR"
+          TARGET="${CACHE_DIR}/${MITE_VERSION}.jar"
+          JAR_URL="https://maven.limingzxc.top/repository/maven-public/com/github/MinecraftIsTooEasy/1.6.4-MITE/1.0.0/1.6.4-MITE-1.0.0.jar"
+          echo "Downloading ${JAR_URL} -> ${TARGET}"
+          curl -fSL "$JAR_URL" -o "$TARGET"
+
       - name: Build with Gradle
         run: ./gradlew clean build --no-daemon
 
