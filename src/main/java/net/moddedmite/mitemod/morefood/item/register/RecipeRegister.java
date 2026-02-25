@@ -29,13 +29,14 @@ public class RecipeRegister extends MFItems {
         register.registerShapelessRecipe(new ItemStack(blueberry_pie, 1), true, Item.blueberries, Item.sugar, Item.flour, Item.egg);
         register.registerShapelessRecipe(new ItemStack(bowl_netherStalkSeeds_soup, 1), true, Item.bowlWater, new ItemStack(netherStalkSeeds, 3));
         register.registerShapelessRecipe(new ItemStack(hamburger, 1), true, Item.bread, Item.bread, Item.onion, Item.beefCooked, MFItems.cooked_bacon, Item.carrot);
-        register.registerShapelessRecipe(new ItemStack(blaze_apple, 1), true, Item.appleGold, Item.blazePowder);
+        register.registerShapelessRecipe(new ItemStack(blaze_apple, 1), true, Item.appleGold,new ItemStack(blazePowder, 2));
         register.registerShapelessRecipe(new ItemStack(dried_flesh, 1), true,Item.sugar, new ItemStack(rottenFlesh, 4) );
         register.registerShapelessRecipe(new ItemStack(stuffed_potato, 1), true, Item.bakedPotato, Item.carrot, Item.chickenCooked, Item.bowlMilk);
         register.registerShapelessRecipe(new ItemStack(stuffed_potato, 1), true, Item.bakedPotato, Item.carrot, Item.lambchopCooked, Item.bowlMilk);
         register.registerShapelessRecipe(new ItemStack(egg_sandwich, 1), true, Item.bread,new ItemStack(fried_egg, 2));
-        register.registerShapelessRecipe(new ItemStack(raw_pasta, 2), true, Item.bowlWater,new ItemStack(flour, 2));
+        register.registerShapelessRecipe(new ItemStack(raw_pasta, 4), true, Item.bowlWater,new ItemStack(flour, 2));
         register.registerShapelessRecipe(new ItemStack(squid_ink_pasta, 1), true, MFItems.raw_pasta_cooked,Item.onion,MFItems.squid_meat_cooked,Item.bowlEmpty,new ItemStack(Item.dyePowder, 1, 0));
+        register.registerShapelessRecipe(new ItemStack(meat_jelly, 4), true, Item.slimeBall, Item.bowlWater,new ItemStack(leather, 4));
         register.registerShapelessRecipe(new ItemStack(seafood_feast, 1), true, Item.bowlEmpty, MFItems.squid_meat,MFItems.squid_meat,MFItems.squid_meat, MFItems.squid_sashimi, Item.fishRaw, Item.onion,Item.egg);
 
 
@@ -52,6 +53,8 @@ public class RecipeRegister extends MFItems {
         register.registerShapedRecipe(new ItemStack(baguette, 1), true, "  B", " B ", "B  ", 'B', Item.bread);
         register.registerShapedRecipe(new ItemStack(lollipop, 1), true, " AA", " AA", "S  ", 'A', Item.sugar, 'S', Item.stick);
         register.registerShapedRecipe(new ItemStack(shepherds_pie, 4), true, "PMP", "LLL", "OMO", 'P', Item.bakedPotato, 'M', Item.bowlMilk, 'L', Item.lambchopCooked, 'O', Item.onion);
+        register.registerShapedRecipe(new ItemStack(bedrock_apple, 1), true, "BBB", "BAB", "BBB", 'A',Item.appleRed,'B', Block.bedrock);
+        register.registerShapedRecipe(new ItemStack(ancient_metal_melon_slice, 1), true, "AAA", "IMI", "AAA", 'A',Item.ancientMetalNugget,'I',Item.ingotAncientMetal,'M', Item.melon);
 
         register.registerShapedRecipe(new ItemStack(cooked_chicken_skewer, 1), true, " C ", " M ", " S ", 'C', Item.chickenCooked, 'M', Block.mushroomBrown, 'S', Item.stick);
 

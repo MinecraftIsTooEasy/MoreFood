@@ -3,7 +3,7 @@ package net.moddedmite.mitemod.morefood.item.tool;
 import net.minecraft.*;
 
 public class ItemKitchenKnife extends ItemKnife {
-    public ItemKitchenKnife(int itemId, Material material) {
+    public ItemKitchenKnife(int itemId, Material material, String textureName) {
         super(itemId, material);
 
     }
