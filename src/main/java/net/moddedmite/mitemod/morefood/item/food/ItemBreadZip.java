@@ -12,6 +12,7 @@ public class ItemBreadZip extends ItemFood {
         super(id, MFMaterials.bread_zip,satiation, nutrition, sugarContent, hasProtein, hasEssentialFats, hasPhytonutrients, textureName);
         this.addMaterial(Material.bread);
         this.setPlantProduct();
+        this.setAlwaysEdible();
     }
 
     @Override
