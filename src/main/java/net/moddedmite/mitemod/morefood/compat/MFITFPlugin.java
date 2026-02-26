@@ -29,5 +29,7 @@ public class MFITFPlugin implements ITFPlugin {
         registry.registerMaterialWater(MFMaterials.dried_flesh, -1);
         registry.registerMaterialWater(MFMaterials.lollipop, -1);
         registry.registerMaterialWater(MFMaterials.blaze_apple, -4);
+        registry.registerMaterialWater(MFMaterials.ancient_metal_melon_slice, -1);
+        registry.registerMaterialWater(MFMaterials.raw_pasta, -1);
     }
 }

@@ -50,14 +50,16 @@ item.egg_sandwich.name=鸡蛋三明治
 item.raw_pasta.name=生意面
 item.raw_pasta_cooked.name=熟意面
 item.squid_ink_pasta.name=鱿鱼墨面
-item.bedrock_apple.name=-基岩苹果
 item.ancient_metal_melon_slice.name=远古金属西瓜片
 item.meat_jelly.name=皮冻
+item.donkey_burger.name=驴肉火烧
+item.stargazy_pie.name=仰望星空
 
 item.morefood:food/ancient_metal_melon_slice.info=食用之后获得8分钟急迫2
 item.morefood:food/blaze_apple.info=食用之后获得1分钟抗性提升和1分钟力量1
-item.morefood:food/bread_zip.info=食用之后获得4分钟饱和
-item.morefood:food/bedrock_apple.info=§4食用之后飞升成仙
+item.morefood:food/bread_zip.info=食用之后获得4分钟饱
+item.morefood:food/donkey_burger.info=味真足
+item.morefood:food/stargazy_pie.info=豪吃
 
 
 itemGroup.MoreFood=更多食物

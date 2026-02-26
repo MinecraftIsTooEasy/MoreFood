@@ -50,10 +50,12 @@ public class ItemTextureRegister extends MFItems {
         event.register(NameSpace, MoreFoodInit.resourceId + "food/raw_pasta", "raw_pasta", raw_pasta, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/raw_pasta_cooked", "raw_pasta_cooked", raw_pasta_cooked, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/squid_ink_pasta", "squid_ink_pasta", squid_ink_pasta, MFCreativeTab.TAB);
-        event.register(NameSpace, MoreFoodInit.resourceId + "food/lollipop", "lollipop", lollipop, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/blaze_apple", "blaze_apple", blaze_apple, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/lollipop", "lollipop", lollipop, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/meat_jelly", "meat_jelly", meat_jelly, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/ancient_metal_melon_slice", "ancient_metal_melon_slice", ancient_metal_melon_slice, MFCreativeTab.TAB);
-        event.register(NameSpace, MoreFoodInit.resourceId + "food/bedrock_apple", "bedrock_apple", bedrock_apple, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/donkey_burger", "donkey_burger", donkey_burger, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/stargazy_pie", "stargazy_pie", stargazy_pie, MFCreativeTab.TAB);
+
     }
 }
