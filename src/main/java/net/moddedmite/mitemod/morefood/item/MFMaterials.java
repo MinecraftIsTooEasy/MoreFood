@@ -38,7 +38,8 @@ public class MFMaterials extends Material {
     public static Material squid_ink_pasta;
     public static Material ancient_metal_melon_slice;
     public static Material meat_jelly;
-    public static Material bedrock_apple;
+    public static Material donkey_burger;
+    public static Material stargazy_pie;
 
 
     public MFMaterials(EnumEquipmentMaterial enum_crafting_material) {
@@ -81,6 +82,7 @@ public class MFMaterials extends Material {
         blaze_apple = new MaterialFood("blaze_apple").setHarmedByPepsin();
         ancient_metal_melon_slice = new MaterialFood("ancient_metal_melon_slice").setHarmedByPepsin();
         meat_jelly = new MaterialFood("meat_jelly").setHarmedByPepsin();
-        bedrock_apple = new MaterialFood("bedrock_apple").setHarmedByPepsin();
+        donkey_burger = new MaterialFood("donkey_burger").setHarmedByPepsin();
+        stargazy_pie = new MaterialFood("stargazy_pie").setHarmedByPepsin();
     }
 }
