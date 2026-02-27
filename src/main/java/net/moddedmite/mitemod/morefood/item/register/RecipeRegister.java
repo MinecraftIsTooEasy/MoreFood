@@ -23,11 +23,11 @@ public class RecipeRegister extends MFItems {
         register.registerShapelessRecipe(new ItemStack(bowl_carrot_soup, 1), true, Item.bowlEmpty, Item.carrot, Item.carrot, Item.carrot);
         register.registerShapelessRecipe(new ItemStack(carrot_cake, 1), true, Item.carrot, Item.flour, Item.egg, Item.sugar);
         register.registerShapelessRecipe(new ItemStack(prok_eggs, 1), true, MFItems.cooked_bacon, MFItems.fried_egg);
-        register.registerShapelessRecipe(new ItemStack(chicken_sandwich, 1), true, Item.chickenCooked, Item.carrot, Item.bread, Item.bread);
+        register.registerShapelessRecipe(new ItemStack(chicken_sandwich, 2), true, Item.chickenCooked, Item.carrot, Item.bread, Item.bread);
         register.registerShapelessRecipe(new ItemStack(apple_pie, 1), true, Item.appleRed, Item.sugar, Item.flour, Item.egg);
         register.registerShapelessRecipe(new ItemStack(blueberry_pie, 1), true, Item.blueberries, Item.sugar, Item.flour, Item.egg);
         register.registerShapelessRecipe(new ItemStack(bowl_netherStalkSeeds_soup, 1), true, Item.bowlWater, new ItemStack(netherStalkSeeds, 3));
-        register.registerShapelessRecipe(new ItemStack(hamburger, 1), true, Item.bread, Item.bread, Item.onion, Item.beefCooked, MFItems.cooked_bacon, Item.carrot);
+        register.registerShapelessRecipe(new ItemStack(hamburger, 2), true, Item.bread, Item.bread, Item.onion, Item.beefCooked, MFItems.cooked_bacon, Item.carrot);
         register.registerShapelessRecipe(new ItemStack(blaze_apple, 1), true, Item.appleGold,new ItemStack(blazePowder, 2));
         register.registerShapelessRecipe(new ItemStack(dried_flesh, 1), true,Item.sugar, new ItemStack(rottenFlesh, 4) );
         register.registerShapelessRecipe(new ItemStack(stuffed_potato, 1), true, Item.bakedPotato, Item.carrot, Item.chickenCooked, Item.bowlMilk);
