@@ -16,6 +16,7 @@ public class FurnaceRecipesExtend extends MFItems {
         FurnaceRecipes.smelting().addSmelting(dried_flesh.itemID, new ItemStack(leather.itemID));
         FurnaceRecipes.smelting().addSmelting(raw_pasta.itemID, new ItemStack(raw_pasta_cooked));
         FurnaceRecipes.smelting().addSmelting(dough.itemID, new ItemStack(Item.bread, 4));
+        FurnaceRecipes.smelting().addSmelting(carrot.itemID, new ItemStack(cooked_carrot));
 
         ItemFood.setCookingResult(horse_meat, horse_meat_cooked, 6);
         ItemFood.setCookingResult(bacon, cooked_bacon, 6);

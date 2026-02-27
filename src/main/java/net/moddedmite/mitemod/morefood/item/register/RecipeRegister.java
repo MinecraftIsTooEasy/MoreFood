@@ -20,7 +20,7 @@ public class RecipeRegister extends MFItems {
             register.registerShapelessRecipe(new ItemStack(bowlHorsemeatStew, 1), true, net.oilcake.mitelros.registry.item.Items.horse_meat_cooked, Item.bowlWater, Block.mushroomBrown, Item.onion);
         }
         register.registerShapelessRecipe(new ItemStack(bowl_melon_salad, 1), true, Item.bowlEmpty, Item.melon, Item.melon, Item.melon);
-        register.registerShapelessRecipe(new ItemStack(bowl_carrot_soup, 1), true, Item.bowlEmpty, Item.carrot, Item.carrot, Item.carrot);
+        register.registerShapelessRecipe(new ItemStack(bowl_carrot_soup, 1), true, Item.bowlEmpty, MFItems.cooked_carrot, MFItems.cooked_carrot);
         register.registerShapelessRecipe(new ItemStack(carrot_cake, 1), true, Item.carrot, Item.flour, Item.egg, Item.sugar);
         register.registerShapelessRecipe(new ItemStack(prok_eggs, 1), true, MFItems.cooked_bacon, MFItems.fried_egg);
         register.registerShapelessRecipe(new ItemStack(chicken_sandwich, 2), true, Item.chickenCooked, Item.carrot, Item.bread, Item.bread);

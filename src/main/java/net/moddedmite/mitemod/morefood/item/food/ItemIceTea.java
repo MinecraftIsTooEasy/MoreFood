@@ -2,14 +2,15 @@ package net.moddedmite.mitemod.morefood.item.food;
 
 import net.minecraft.*;
 import net.moddedmite.mitemod.morefood.item.MFMaterials;
+import net.moddedmite.mitemod.morefood.sound.Sounds;
 
 import java.util.List;
 
-public class ItemBreadZip extends ItemFood {
+public class ItemIceTea extends ItemFood {
 
-    public ItemBreadZip(int id, int satiation, int nutrition, int sugarContent, boolean hasProtein, boolean hasEssentialFats, boolean hasPhytonutrients, String textureName)
+    public ItemIceTea(int id, int satiation, int nutrition, int sugarContent, boolean hasProtein, boolean hasEssentialFats, boolean hasPhytonutrients, String textureName)
     {
-        super(id, MFMaterials.bread_zip,satiation, nutrition, sugarContent, hasProtein, hasEssentialFats, hasPhytonutrients, textureName);
+        super(id, MFMaterials.ice_tea,satiation, nutrition, sugarContent, hasProtein, hasEssentialFats, hasPhytonutrients, textureName);
         this.addMaterial(Material.bread);
         this.setPlantProduct();
         this.setAlwaysEdible();
@@ -28,6 +29,16 @@ public class ItemBreadZip extends ItemFood {
         if (extended_info) {
             info.add(I18n.getString("item." + this.getIconString() + ".info"));
         }
+    }
+
+    @Override
+    public void onItemUseFinish(ItemStack item_stack, World world, EntityPlayer player) {
+        if (player.onServer()) {
+            player.addFoodValue(this);
+            world.playSoundAtEntity(player, Sounds.icetea.toString(), 0.5f, player.rand.nextFloat() * 0.1f + 0.9f);
+            this.onEaten(item_stack, world, player);
+        }
+        super.onItemUseFinish(item_stack, world, player);
     }
 
 }

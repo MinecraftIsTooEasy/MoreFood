@@ -54,6 +54,7 @@ item.ancient_metal_melon_slice.name=Ancient Metal Melon Slice
 item.meat_jelly.name=leather Jelly
 item.donkey_burger.name=Donkey Burger
 item.stargazy_pie.name=Stargazy Pie
+item.cooked_carrot.name=Cooked Carrot
 
 
 item.morefood:food/blaze_apple.info=Eating gives 1-minute resistance boost and 1-minute strength 1
