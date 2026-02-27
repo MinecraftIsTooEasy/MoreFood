@@ -2,7 +2,7 @@ package net.moddedmite.mitemod.morefood.item.food;
 
 import net.minecraft.*;
 import net.moddedmite.mitemod.morefood.item.MFMaterials;
-import net.moddedmite.mitemod.morefood.sound.Sounds;
+import net.moddedmite.mitemod.morefood.client.MFSounds;
 
 import java.util.List;
 
@@ -21,8 +21,15 @@ public class ItemIceTea extends ItemFood {
         if (!worldIn.isRemote) {
             player.addPotionEffect(new PotionEffect(Potion.field_76443_y.id, 2400, 0).setAmplifier(0));
         }
+
         super.onEaten(stack, worldIn, player);
     }
+
+    @Override
+    public EnumItemInUseAction getItemInUseAction(ItemStack item_stack, EntityPlayer player) {
+        return EnumItemInUseAction.DRINK;
+    }
+
     @Override
     @SuppressWarnings("unchecked")
     public void addInformationBeforeEnchantments(ItemStack item_stack, EntityPlayer player, List info, boolean extended_info, Slot slot) {
@@ -35,9 +42,10 @@ public class ItemIceTea extends ItemFood {
     public void onItemUseFinish(ItemStack item_stack, World world, EntityPlayer player) {
         if (player.onServer()) {
             player.addFoodValue(this);
-            world.playSoundAtEntity(player, Sounds.icetea.toString(), 0.5f, player.rand.nextFloat() * 0.1f + 0.9f);
+            world.playSoundAtEntity(player, MFSounds.iceTea.toString(), 0.5f, player.rand.nextFloat() * 0.1f + 0.9f);
             this.onEaten(item_stack, world, player);
         }
+
         super.onItemUseFinish(item_stack, world, player);
     }
 

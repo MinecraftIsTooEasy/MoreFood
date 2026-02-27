@@ -54,6 +54,8 @@ item.ancient_metal_melon_slice.name=远古金属西瓜片
 item.meat_jelly.name=皮冻
 item.donkey_burger.name=驴肉火烧
 item.stargazy_pie.name=仰望星空
+item.cooked_carrot.name=熟胡萝卜
+item.ice_tea.name=冰红茶
 
 item.morefood:food/ancient_metal_melon_slice.info=食用之后获得8分钟急迫2
 item.morefood:food/blaze_apple.info=食用之后获得1分钟抗性提升和1分钟力量1
