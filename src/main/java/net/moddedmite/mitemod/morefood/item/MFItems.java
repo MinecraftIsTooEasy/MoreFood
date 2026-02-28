@@ -23,7 +23,7 @@ public class MFItems extends Item {
     public static final ItemFood bacon = new ItemMeat(getItemId("bacon"), 2, 2, false, false, "bacon");
     public static final ItemFood apple_pie = (ItemFood) new ItemFood(getItemId("apple_pie"), MFMaterials.appleRed, 10, 6, 1000, false, false, true, "apple_pie").setPlantProduct().setMaxStackSize(8);
     public static final ItemFood blueberry_pie = (ItemFood) new ItemFood(getItemId("blueberry_pie"), MFMaterials.berry, 10, 6, 1000, false, false, true, "blueberry_pie").setPlantProduct().setMaxStackSize(8);
-    public static final ItemFood roastedseeds = (ItemFood) new ItemFood(getItemId("roastedseeds"), MFMaterials.seeds, 2, 0, false, false, false, "roastedseeds").setPlantProduct().setMaxStackSize(64);
+    public static final ItemFood roastedseeds = (ItemFood) new ItemFood(getItemId("roastedseeds"), MFMaterials.seeds, 3, 0, false, false, false, "roastedseeds").setPlantProduct().setMaxStackSize(64);
     public static final ItemBowl bowl_netherStalkSeeds_soup = (ItemBowl) (new ItemBowl(getItemId("bowl_netherStalkSeeds_soup"), MFMaterials.bowl_netherStalkSeeds_soup,"bowl_netherStalkSeeds_soup")).setFoodValue(4, 4, false, false, true).setUnlocalizedName("bowl_netherStalkSeeds_soup");
     public static final ItemFood hamburger = (ItemFood) (new ItemFood(getItemId("hamburger"), MFMaterials.hamburger,16,10,true,false,true,"hamburger")).setMaxStackSize(16).setUnlocalizedName("hamburger");
     public static final Item beef_nugget = new ItemMeat(getItemId("beef_nugget"), 2, 2, false, true, "beef_nugget");
@@ -53,7 +53,8 @@ public class MFItems extends Item {
     public static final ItemFood donkey_burger = (ItemFood) (new ItemFood(getItemId("donkey_burger"), MFMaterials.donkey_burger, 20, 15, true,false, true, "donkey_burger")).setPlantProduct().setMaxStackSize(16);
     public static final ItemFood stargazy_pie = (ItemFood) (new ItemStargazyPie(getItemId("stargazy_pie"), 9, 9, 0, true, false, true, "stargazy_pie")).setUnlocalizedName("stargazy_pie");
     public static final ItemFood cooked_carrot = (ItemFood) (new ItemFood(getItemId("cooked_carrot"), MFMaterials.cooked_carrot, 3, 3, true, false, true, "cooked_carrot")).setUnlocalizedName("cooked_carrot");
-    public static final ItemFood ice_tea = (ItemFood) (new ItemIceTea(getItemId("ice_tea"), 12, 8, 4000, true, false, false, "ice_tea")).setUnlocalizedName("ice_tea");
+    public static final ItemFood ice_tea = (ItemFood) (new ItemIceTea(getItemId("ice_tea"), 12, 8, 1000, false, false, false, "ice_tea")).setUnlocalizedName("ice_tea");
+    public static final ItemFood bedrock_apple = (ItemFood) (new ItemBedrockApple(getItemId("bedrock_apple"), 2, 1, 1000, false,false, true, "bedrock_apple")).setPlantProduct().setMaxStackSize(16);
 
     private static int getItemId(String contentName) {
         return IdUtil.getNextItemID();

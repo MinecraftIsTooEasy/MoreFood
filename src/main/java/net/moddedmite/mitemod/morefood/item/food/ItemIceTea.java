@@ -19,21 +19,11 @@ public class ItemIceTea extends ItemFood {
     @Override
     protected void onEaten(ItemStack stack, World worldIn, EntityPlayer player) {
         if (!worldIn.isRemote) {
-            player.addPotionEffect(new PotionEffect(Potion.field_76443_y.id, 2400, 0).setAmplifier(0));
+            player.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 600, 0).setAmplifier(1));
+            player.addPotionEffect(new PotionEffect(Potion.resistance.id, 2400, 0).setAmplifier(0));
         }
 
         super.onEaten(stack, worldIn, player);
-    }
-
-    @Override
-    public void onUpdate(ItemStack stack, World world, Entity entity, int slot, boolean isCurrentItem) {
-        super.onUpdate(stack, world, entity, slot, isCurrentItem);
-
-        if (!(entity instanceof EntityPlayer player)) return;
-
-        if (player.getItemInUse() == stack && player.onServer() && world.getTotalWorldTime() % 3L == 0L) {
-            world.playSoundAtEntity(player, MFSounds.iceTea.toString(), 0.5f, player.rand.nextFloat() * 0.1f + 0.9f);
-        }
     }
 
     @Override
@@ -48,12 +38,22 @@ public class ItemIceTea extends ItemFood {
             info.add(I18n.getString("item." + this.getIconString() + ".info"));
         }
     }
+    @Override
+    public void onUpdate(ItemStack stack, World world, Entity entity, int slot, boolean isCurrentItem) {
+        super.onUpdate(stack, world, entity, slot, isCurrentItem);
+
+        if (!(entity instanceof EntityPlayer player)) return;
+
+        if (player.getItemInUse() == stack && player.onServer() && world.getTotalWorldTime() % 3L == 0L) {
+            world.playSoundAtEntity(player, MFSounds.IceTea.toString(), 0.5f, player.rand.nextFloat() * 0.1f + 0.9f);
+        }
+    }
+
 
     @Override
     public void onItemUseFinish(ItemStack item_stack, World world, EntityPlayer player) {
         if (player.onServer()) {
             player.addFoodValue(this);
-//            world.playSoundAtEntity(player, MFSounds.iceTea.toString(), 0.5f, player.rand.nextFloat() * 0.1f + 0.9f);
             this.onEaten(item_stack, world, player);
         }
 

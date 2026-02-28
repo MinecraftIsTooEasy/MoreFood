@@ -17,5 +17,6 @@ public class MoreFoodInit implements ModInitializer {
         MFEventListen.registerRICEvents();
         ModResourceManager.addResourcePackDomain("morefood");
 //        allocator = new IDAllocator(modId, 0, 64);
+        MFRICEvents.register();
     }
 }
