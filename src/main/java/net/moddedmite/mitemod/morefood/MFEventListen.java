@@ -1,12 +1,12 @@
 package net.moddedmite.mitemod.morefood;
 
 import moddedmite.rustedironcore.api.event.Handlers;
+import net.moddedmite.mitemod.morefood.client.MFSounds;
 import net.moddedmite.mitemod.morefood.events.UseTickListener;
 import net.moddedmite.mitemod.morefood.item.register.FurnaceRecipesExtend;
 import net.moddedmite.mitemod.morefood.item.register.ItemTextureRegister;
 import net.moddedmite.mitemod.morefood.item.register.RecipeRegister;
 import com.google.common.eventbus.Subscribe;
-import net.moddedmite.mitemod.morefood.client.MFSounds;
 import net.xiaoyu233.fml.reload.event.ItemRegistryEvent;
 import net.xiaoyu233.fml.reload.event.RecipeRegistryEvent;
 import net.xiaoyu233.fml.reload.event.SoundsRegisterEvent;
@@ -26,7 +26,7 @@ public class MFEventListen extends Handlers {
 
     @Subscribe
     public void onSoundsRegister(SoundsRegisterEvent event) {
-        event.registerSound(MFSounds.iceTea);
+        event.registerSound(MFSounds.IceTea);
     }
 
     public static void registerRICEvents() {

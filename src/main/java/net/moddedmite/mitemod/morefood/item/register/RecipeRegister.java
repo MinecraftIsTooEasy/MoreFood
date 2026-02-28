@@ -55,6 +55,7 @@ public class RecipeRegister extends MFItems {
         register.registerShapedRecipe(new ItemStack(lollipop, 1), true, " AA", " AA", "S  ", 'A', Item.sugar, 'S', Item.stick);
         register.registerShapedRecipe(new ItemStack(shepherds_pie, 4), true, "PMP", "LLL", "OMO", 'P', Item.bakedPotato, 'M', Item.bowlMilk, 'L', Item.lambchopCooked, 'O', Item.onion);
         register.registerShapedRecipe(new ItemStack(ancient_metal_melon_slice, 1), true, "AAA", "IMI", "AAA", 'A',Item.ancientMetalNugget,'I',Item.ingotAncientMetal,'M', Item.melon);
+        register.registerShapedRecipe(new ItemStack(bedrock_apple, 1), true, " BBB", "BAB", "BBB", 'A', Item.appleRed, 'B', Block.bedrock);
 
         register.registerShapedRecipe(new ItemStack(cooked_chicken_skewer, 1), true, " C ", " M ", " S ", 'C', Item.chickenCooked, 'M', Block.mushroomBrown, 'S', Item.stick);
 
