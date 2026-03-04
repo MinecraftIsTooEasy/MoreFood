@@ -6,6 +6,9 @@
     "fishmodloader": ">=3.2.1",
     "rusted_iron_core": ">=1.5.0"
   },
+  "breaks": {
+    "mite-itf-reborn": "<17.2.22"
+  },
   "environment": "*",
   "name": "More Food",
   "description": "",
@@ -26,5 +29,5 @@
   "mixins": [
     "morefood.mixins.json"
   ],
-  "accessWidener": "morefood.accessWidener"
+  "accessWidener": "morefood.accesswidener"
 }

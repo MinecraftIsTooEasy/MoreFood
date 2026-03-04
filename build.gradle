@@ -47,7 +47,7 @@ dependencies {
 def fmlResolvedFile = configurations.fml.files.iterator().next()
 
 loom {
-    accessWidenerPath = file("src/main/resources/morefood.accessWidener")
+    accessWidenerPath = file("src/main/resources/morefood.accesswidener")
 	mergedMinecraftJar()
 	mods {
 		"MoreFood" {
