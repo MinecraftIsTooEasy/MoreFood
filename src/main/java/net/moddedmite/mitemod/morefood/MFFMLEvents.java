@@ -1,5 +1,6 @@
 package net.moddedmite.mitemod.morefood;
 
+import moddedmite.rustedironcore.api.event.events.CraftingRecipeRegisterEvent;
 import net.moddedmite.mitemod.morefood.client.MFSounds;
 import net.moddedmite.mitemod.morefood.item.register.FurnaceRecipesExtend;
 import net.moddedmite.mitemod.morefood.item.register.ItemTextureRegister;
@@ -10,6 +11,8 @@ import com.google.common.eventbus.Subscribe;
 import net.xiaoyu233.fml.reload.event.ItemRegistryEvent;
 import net.xiaoyu233.fml.reload.event.RecipeRegistryEvent;
 import net.xiaoyu233.fml.reload.event.SoundsRegisterEvent;
+
+import java.util.function.Consumer;
 
 public class MFFMLEvents {
 
@@ -29,3 +32,4 @@ public class MFFMLEvents {
         event.registerSound(MFSounds.IceTea);
     }
 }
+

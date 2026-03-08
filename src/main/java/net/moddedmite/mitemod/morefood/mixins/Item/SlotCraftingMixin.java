@@ -20,7 +20,7 @@ public abstract class SlotCraftingMixin {
         this.craftMatrix = craftMatrix;
     }
 
-    @Inject(method = "onPickupFromSlot", at = @At(value = "INVOKE", target = "Lnet/minecraft/ItemStack;getItem()Lnet/minecraft/Item;", ordinal = 0))
+  /*@Inject(method = "onPickupFromSlot", at = @At(value = "INVOKE", target = "Lnet/minecraft/ItemStack;getItem()Lnet/minecraft/Item;", ordinal = 0))
     private void damageDagger(EntityPlayer par1EntityPlayer, ItemStack par2ItemStack, CallbackInfo ci) {
         // 检查是否正在合成短剑
         isCraftingDagger = par2ItemStack.getItem() instanceof ItemDagger;
@@ -60,5 +60,5 @@ public abstract class SlotCraftingMixin {
         } else {
             return original.call(instance, i, j);
         }
-    }
+    }*/
 }

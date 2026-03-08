@@ -39,6 +39,10 @@ public class RecipeRegister extends MFItems {
         register.registerShapelessRecipe(new ItemStack(donkey_burger, 1), true, Item.bread, MFItems.horse_meat_cooked, Item.onion);
         register.registerShapelessRecipe(new ItemStack(seafood_feast, 1), true, Item.bowlEmpty, MFItems.squid_meat,MFItems.squid_meat,MFItems.squid_meat, MFItems.squid_sashimi, Item.fishRaw, Item.onion,Item.egg);
         register.registerShapelessRecipe(new ItemStack(stargazy_pie, 4), true, Item.pumpkinPie,new ItemStack(fishCooked, 4));
+        register.registerShapelessRecipe(new ItemStack(bacon, 2), true,Item.porkRaw);
+        register.registerShapelessRecipe(new ItemStack(beef_nugget, 5), true, Item.beefCooked);
+        register.registerShapelessRecipe(new ItemStack(mutton_nugget, 3), true, Item.lambchopCooked);
+
 
 
 //        register.registerShapelessRecipe(new ItemStack(bacon, 2), true, Item.porkRaw,Item.knifeFlint);
@@ -60,13 +64,13 @@ public class RecipeRegister extends MFItems {
 
         register.registerShapedRecipe(new ItemStack(cooked_chicken_skewer, 1), true, " C ", " M ", " S ", 'C', Item.chickenCooked, 'M', Block.mushroomBrown, 'S', Item.stick);
 
-        for (Item item : Item.itemsList) {
+        /*for (Item item : Item.itemsList) {
             if (item instanceof ItemDagger dagger) {
                 register.registerShapelessRecipe(new ItemStack(bacon, 2), true, dagger, Item.porkRaw);
                 register.registerShapelessRecipe(new ItemStack(beef_nugget, 4), true, dagger, Item.beefCooked);
                 register.registerShapelessRecipe(new ItemStack(mutton_nugget, 3), true, dagger, Item.lambchopCooked);
             }
-        }
+        }*/
     }
 
 }
