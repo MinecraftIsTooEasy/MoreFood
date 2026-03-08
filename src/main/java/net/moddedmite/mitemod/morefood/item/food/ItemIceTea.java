@@ -44,7 +44,7 @@ public class ItemIceTea extends ItemFood {
 
         if (!(entity instanceof EntityPlayer player)) return;
 
-        if (player.getItemInUse() == stack && player.onServer() && world.getTotalWorldTime() % 3L == 0L) {
+        if (player.getItemInUse() == stack && player.onServer() && world.getTotalWorldTime() % 4L == 0L) {
             world.playSoundAtEntity(player, MFSounds.IceTea.toString(), 0.5f, player.rand.nextFloat() * 0.1f + 0.9f);
         }
     }
@@ -54,6 +54,7 @@ public class ItemIceTea extends ItemFood {
     public void onItemUseFinish(ItemStack item_stack, World world, EntityPlayer player) {
         if (player.onServer()) {
             player.addFoodValue(this);
+            world.playSoundAtEntity(player, MFSounds.IceTea.toString(), 0.5f, player.rand.nextFloat() * 0.1f + 0.9f);
             this.onEaten(item_stack, world, player);
         }
 

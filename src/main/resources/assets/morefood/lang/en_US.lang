@@ -57,6 +57,8 @@ item.stargazy_pie.name=Stargazy Pie
 item.cooked_carrot.name=Cooked Carrot
 item.ice_tea.name=Ice Tea
 item.bedrock_apple.name=Bedrock Apple
+item.ancient_metal_apple.name=Ancient Metal Apple
+
 
 item.morefood:food/blaze_apple.info=Eating gives 1-minute resistance boost and 1-minute strength 1
 item.morefood:food/bread_zip.info=Eating gives 4-minute saturation and 1-minute haste
