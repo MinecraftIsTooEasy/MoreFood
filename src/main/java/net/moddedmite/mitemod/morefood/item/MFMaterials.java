@@ -42,6 +42,7 @@ public class MFMaterials extends Material {
     public static Material stargazy_pie;
     public static Material cooked_carrot;
     public static Material ice_tea;
+    public static Material ancient_metal_apple;
     public static Material bedrock_apple;
 
 
@@ -90,5 +91,6 @@ public class MFMaterials extends Material {
         cooked_carrot = new MaterialFood("cooked_carrot").setHarmedByPepsin();
         ice_tea = new MaterialFood("ice_tea").setHarmedByPepsin();
         bedrock_apple = new MaterialFood("bedrock_apple").setHarmedByPepsin();
+        ancient_metal_apple = new MaterialFood("ancient_metal_apple").setHarmedByPepsin();
     }
 }
