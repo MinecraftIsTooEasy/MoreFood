@@ -58,6 +58,7 @@ public class ItemTextureRegister extends MFItems {
         event.register(NameSpace, MoreFoodInit.resourceId + "food/stargazy_pie", "stargazy_pie", stargazy_pie, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/cooked_carrot", "cooked_carrot", cooked_carrot, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/ice_tea", "ice_tea", ice_tea, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/ancient_metal_apple", "ancient_metal_apple", ancient_metal_apple, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/bedrock_apple", "bedrock_apple", bedrock_apple, MFCreativeTab.TAB);
     }
 }
