@@ -18,7 +18,7 @@ public class ItemBreadZip extends ItemFood {
     @Override
     protected void onEaten(ItemStack stack, World worldIn, EntityPlayer player) {
         if (!worldIn.isRemote) {
-            player.addPotionEffect(new PotionEffect(Potion.field_76443_y.id, 2400, 0).setAmplifier(0));
+            player.addPotionEffect(new PotionEffect(Potion.field_76443_y.id, 3600, 0).setAmplifier(0));
         }
         super.onEaten(stack, worldIn, player);
     }
