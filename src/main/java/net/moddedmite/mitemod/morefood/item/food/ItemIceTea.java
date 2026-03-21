@@ -16,6 +16,7 @@ public class ItemIceTea extends ItemFood {
         this.setAlwaysEdible();
     }
 
+/*
     @Override
     protected void onEaten(ItemStack stack, World worldIn, EntityPlayer player) {
         if (!worldIn.isRemote) {
@@ -25,6 +26,7 @@ public class ItemIceTea extends ItemFood {
 
         super.onEaten(stack, worldIn, player);
     }
+*/
 
     @Override
     public EnumItemInUseAction getItemInUseAction(ItemStack item_stack, EntityPlayer player) {
