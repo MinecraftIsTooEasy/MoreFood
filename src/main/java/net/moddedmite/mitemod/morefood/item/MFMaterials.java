@@ -44,6 +44,8 @@ public class MFMaterials extends Material {
     public static Material ice_tea;
     public static Material ancient_metal_apple;
     public static Material bedrock_apple;
+    public static Material humanoid_flesh;
+    public static Material humanoid_flesh_cooked;
 
 
     public MFMaterials(EnumEquipmentMaterial enum_crafting_material) {
@@ -92,5 +94,7 @@ public class MFMaterials extends Material {
         ice_tea = new MaterialFood("ice_tea").setHarmedByPepsin();
         bedrock_apple = new MaterialFood("bedrock_apple").setHarmedByPepsin();
         ancient_metal_apple = new MaterialFood("ancient_metal_apple").setHarmedByPepsin();
+        humanoid_flesh = new MaterialFood("humanoid_flesh").setHarmedByPepsin();
+        humanoid_flesh_cooked = new MaterialFood("humanoid_flesh_cooked").setHarmedByPepsin();
     }
 }

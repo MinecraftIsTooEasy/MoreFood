@@ -58,6 +58,8 @@ item.cooked_carrot.name=Cooked Carrot
 item.ice_tea.name=Ice Tea
 item.bedrock_apple.name=Bedrock Apple
 item.ancient_metal_apple.name=Ancient Metal Apple
+item.humanoid_flesh_cooked.name=Cooked Humanoid Flesh
+item.humanoid_flesh.name=Humanoid Flesh
 
 
 item.morefood:food/blaze_apple.info=Eating gives 1-minute resistance boost and 1-minute strength 1

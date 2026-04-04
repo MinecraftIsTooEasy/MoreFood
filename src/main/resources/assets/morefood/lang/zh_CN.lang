@@ -58,6 +58,8 @@ item.cooked_carrot.name=烤萝卜
 item.ice_tea.name=冰红茶
 item.bedrock_apple.name=基岩苹果
 item.ancient_metal_apple.name=远古金属苹果
+item.humanoid_flesh_cooked.name=熟人肉
+item.humanoid_flesh.name=人肉
 
 
 
@@ -66,6 +68,8 @@ item.morefood:food/blaze_apple.info=食用之后获得1分钟抗性提升和1分
 item.morefood:food/bread_zip.info=食用之后获得3分钟饱和
 item.morefood:food/stargazy_pie.info=豪吃
 item.morefood:food/ice_tea.info=man!可以在下界要塞的箱子里找到也可以通过钓鱼获得
+item.morefood:food/humanoid_flesh.info=禁忌之物
+
 
 
 itemGroup.MoreFood=更多食物
