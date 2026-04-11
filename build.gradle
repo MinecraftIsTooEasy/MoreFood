@@ -12,8 +12,10 @@ base {
 
 repositories {
 	maven {
+		name = "Spongepowered"
+		url = "https://repo.spongepowered.org/repository/maven-public/"
 		name = "ModdedMITE"
-		url = uri("https://maven.limingzxc.top/repository/maven-public/")
+		url = ("https://maven.limingzxc.top/repository/maven-public/")
 	}
 }
 
@@ -40,8 +42,6 @@ dependencies {
 def fmlResolvedFile = configurations.fml.files.iterator().next()
 
 loom {
-//    accessWidenerPath = file("src/main/resources/.accessWidener")
-	mergedMinecraftJar()
 	if (System.getProperty("os.name").toLowerCase().contains("mac")) {
 		runConfigs.named("client").get().getVmArgs().remove("-XstartOnFirstThread")
 	}
@@ -81,23 +81,32 @@ java {
 jar {
 }
 
-/*tasks.named('runClient', JavaExec).configure { exec ->
-    def user = project.hasProperty('username') ? project.username : 'Dev'
-    exec.setArgs(['--username', user, '--session', '0', '--width', '854', '--height', '480'])
-}*/
+tasks.named('runClient', JavaExec).configure { exec ->
+	def user = project.hasProperty('username') ? project.username : 'Dev'
+	exec.setArgs(['--username', user, '--session', '0', '--width', '854', '--height', '480'])
+}
 
 // configure the maven publication
 publishing {
 	publications {
 		mavenJava(MavenPublication) {
+			groupId = project.maven_group
+			artifactId = project.archives_base_name
+			version = project.mod_version
 			from components.java
 		}
 	}
 
+	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
+		maven {
+			name = "ModdedMITE"
+			url = uri("https://maven.limingzxc.top/repository/maven-releases/")
+			credentials {
+				// Read only from gradle.properties (user level, your gradle_home)
+				username = project.findProperty("nexusUsername")
+				password = project.findProperty("nexusPassword")
+			}
+		}
 	}
 }
