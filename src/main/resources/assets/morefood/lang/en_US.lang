@@ -66,6 +66,9 @@ item.morefood:food/blaze_apple.info=Eating gives 1-minute resistance boost and 1
 item.morefood:food/bread_zip.info=Eating gives 4-minute saturation and 1-minute haste
 item.morefood:food/ancient_metal_melon_slice.info=Eating gives 8-minute haste 2
 item.morefood:food/stargazy_pie.info=Very good
+item.morefood:food/ice_tea.info=man! can be found in the nether fort or by fishing
+item.morefood:food/humanoid_flesh.info=Prohibited
+item.morefood:food/bedrock_apple.info=?!强强!?
 
 
 itemGroup.MoreFood=More Food

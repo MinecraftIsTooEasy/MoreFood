@@ -44,6 +44,7 @@ dependencies {
 	implementation files("${lib_dir}/ManyLib-2.3.0.jar")
 	implementation files("${lib_dir}/ModMenu-10.1.0.jar")
 	implementation files("${lib_dir}/emi-1.1.23+1.6.4-MITE+fish.jar")
+	implementation files("${lib_dir}/MITE-BetterTips-v1.4.0.jar")
 	implementation("it.unimi.dsi:fastutil:8.5.12")
 	implementation files(loom.getFML().toPath())
 

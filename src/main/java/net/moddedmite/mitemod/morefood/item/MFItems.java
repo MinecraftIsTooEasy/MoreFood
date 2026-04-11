@@ -56,7 +56,7 @@ public class MFItems extends Item {
     public static final ItemFood ice_tea = (ItemFood) (new ItemIceTea(getItemId("ice_tea"), 12, 8, 1000, false, false, false, "ice_tea")).setUnlocalizedName("ice_tea");
     public static final ItemFood ancient_metal_apple = (ItemFood) (new ItemFood(getItemId("ancient_metal_apple"), MFMaterials.ancient_metal_apple, 2, 1, -4000, false,false, true, "ancient_metal_apple")).setPlantProduct().setAlwaysEdible().setMaxStackSize(16);
     public static final ItemFood bedrock_apple = (ItemFood) (new ItemBedrockApple(getItemId("bedrock_apple"), 2, 1, 1000, false,false, true, "bedrock_apple")).setPlantProduct().setMaxStackSize(16);
-    public static final ItemFood humanoid_flesh = (ItemFood) (new ItemHumanoidFlesh(getItemId("humanoid_flesh"), 2, 2, 250, true, false, false, "humanoid_flesh")).setAnimalProduct().setMaxStackSize(16);
+    public static final ItemFood humanoid_flesh = (ItemFood) (new ItemHumanoidFlesh(getItemId("humanoid_flesh"), 2, 2, 0, true, false, false, "humanoid_flesh")).setAnimalProduct().setMaxStackSize(16);
     public static final ItemFood humanoid_flesh_cooked = (ItemFood) (new ItemFood(getItemId("humanoid_flesh_cooked"), MFMaterials.humanoid_flesh_cooked, 4, 4, true, false, false, "humanoid_flesh_cooked")).setAnimalProduct().setMaxStackSize(16);
 
     private static int getItemId(String contentName) {

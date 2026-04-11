@@ -69,7 +69,7 @@ item.morefood:food/bread_zip.info=食用之后获得3分钟饱和
 item.morefood:food/stargazy_pie.info=豪吃
 item.morefood:food/ice_tea.info=man!可以在下界要塞的箱子里找到也可以通过钓鱼获得
 item.morefood:food/humanoid_flesh.info=禁忌之物
-
+item.morefood:food/bedrock_apple.info=！？强强！？
 
 
 itemGroup.MoreFood=更多食物
