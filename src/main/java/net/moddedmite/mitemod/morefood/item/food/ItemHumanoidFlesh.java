@@ -22,7 +22,7 @@ public class ItemHumanoidFlesh extends ItemFood {
             player.addPotionEffect(new PotionEffect(Potion.blindness.id, 1200, 0).setAmplifier(0));
             player.addPotionEffect(new PotionEffect(Potion.confusion.id, 1200, 0).setAmplifier(0));
             player.addPotionEffect(new PotionEffect(Potion.digSlowdown.id, 1200, 0).setAmplifier(0));
-            player.addPotionEffect(new PotionEffect(Potion.poison.id, 120, 0).setAmplifier(0));
+            player.addPotionEffect(new PotionEffect(Potion.poison.id, 240, 0).setAmplifier(0));
         }
         super.onEaten(stack, worldIn, player);
     }
