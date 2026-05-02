@@ -20,9 +20,9 @@ public class ItemHumanoidFlesh extends ItemFood {
         if (!worldIn.isRemote) {
             player.addPotionEffect(new PotionEffect(Potion.weakness.id, 1200, 0).setAmplifier(0));
             player.addPotionEffect(new PotionEffect(Potion.blindness.id, 1200, 0).setAmplifier(0));
-            player.addPotionEffect(new PotionEffect(Potion.confusion.id, 1200, 0).setAmplifier(0));
+            player.addPotionEffect(new PotionEffect(Potion.confusion.id, 2400, 0).setAmplifier(0));
             player.addPotionEffect(new PotionEffect(Potion.digSlowdown.id, 1200, 0).setAmplifier(0));
-            player.addPotionEffect(new PotionEffect(Potion.poison.id, 240, 0).setAmplifier(0));
+            player.addPotionEffect(new PotionEffect(Potion.poison.id, 540, 0).setAmplifier(0));
         }
         super.onEaten(stack, worldIn, player);
     }

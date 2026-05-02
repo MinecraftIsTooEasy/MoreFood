@@ -33,4 +33,17 @@ public class IceTeaListener implements ILootTableRegisterListener {
             ));
 
     }
+
+
+    @Override
+    public void onDungeonOverworldRegister(List<WeightedRandomChestContent> original) {
+
+        original.add(new WeightedRandomChestContent(
+                new ItemStack( MFItems.humanoid_flesh_cooked, 5),
+                1,
+                1,
+                3
+        ));
+
+    }
 }
