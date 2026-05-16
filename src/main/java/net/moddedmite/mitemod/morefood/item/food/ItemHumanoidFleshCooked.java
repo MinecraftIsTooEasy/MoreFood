@@ -19,7 +19,7 @@ public class ItemHumanoidFleshCooked extends ItemFood {
     protected void onEaten(ItemStack stack, World worldIn, EntityPlayer player) {
         if (!worldIn.isRemote) {
             player.addPotionEffect(new PotionEffect(Potion.confusion.id, 2400, 0).setAmplifier(0));
-            player.addPotionEffect(new PotionEffect(Potion.poison.id, 540, 0).setAmplifier(0));
+/*            player.addPotionEffect(new PotionEffect(Potion.poison.id, 540, 0).setAmplifier(0));*/
             player.addPotionEffect(new PotionEffect(Potion.digSlowdown.id, 1200, 0).setAmplifier(0));
 
         }

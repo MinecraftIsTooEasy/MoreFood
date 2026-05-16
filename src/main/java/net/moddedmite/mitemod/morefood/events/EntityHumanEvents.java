@@ -23,13 +23,13 @@ public class EntityHumanEvents {
                 }
 
             }
-            @Override
+            /*@Override
             public void onServerPlayerDeath(ServerPlayer player, DamageSource damageSource) {
                 System.out.println("Server player " + player.getEntityName() + " died from " + damageSource.getDamageType());
                 if (!player.worldObj.isRemote) {
                     player.dropItem(MFItems.humanoid_flesh.itemID, 1);
                 }
-            }
+            }*/
         });
 
     }
