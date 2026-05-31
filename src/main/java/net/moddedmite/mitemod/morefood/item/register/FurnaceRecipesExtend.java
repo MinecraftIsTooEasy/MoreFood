@@ -20,7 +20,7 @@ public class FurnaceRecipesExtend extends MFItems {
         FurnaceRecipes.smelting().addSmelting(humanoid_flesh.itemID, new ItemStack(humanoid_flesh_cooked));
 
         ItemFood.setCookingResult(horse_meat, horse_meat_cooked, 6);
-        ItemFood.setCookingResult(bacon, cooked_bacon, 6);
+        ItemFood.setCookingResult(bacon, cooked_bacon, 1);
         ItemFood.setCookingResult((ItemFood) seeds, roastedseeds, 1);
         ItemFood.setCookingResult((ItemFood) squid_meat, (ItemFood) squid_meat_cooked, 5);
         ItemFood.setCookingResult((ItemFood) squid_sashimi, (ItemFood) squid_sashimi_cooked, 5);
