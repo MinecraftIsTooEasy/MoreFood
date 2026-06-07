@@ -18,6 +18,9 @@ public class FurnaceRecipesExtend extends MFItems {
         FurnaceRecipes.smelting().addSmelting(dough.itemID, new ItemStack(Item.bread, 2));
         FurnaceRecipes.smelting().addSmelting(carrot.itemID, new ItemStack(cooked_carrot));
         FurnaceRecipes.smelting().addSmelting(humanoid_flesh.itemID, new ItemStack(humanoid_flesh_cooked));
+        FurnaceRecipes.smelting().addSmelting(bat_wing.itemID, new ItemStack(bat_wing_cooked.itemID));
+        FurnaceRecipes.smelting().addSmelting(ocelot_meat.itemID, new ItemStack(ocelot_meat_cooked.itemID));
+        FurnaceRecipes.smelting().addSmelting(wolf_meat.itemID, new ItemStack(wolf_meat_cooked.itemID));
 
         ItemFood.setCookingResult(horse_meat, horse_meat_cooked, 6);
         ItemFood.setCookingResult(bacon, cooked_bacon, 1);
@@ -25,5 +28,8 @@ public class FurnaceRecipesExtend extends MFItems {
         ItemFood.setCookingResult((ItemFood) squid_meat, (ItemFood) squid_meat_cooked, 5);
         ItemFood.setCookingResult((ItemFood) squid_sashimi, (ItemFood) squid_sashimi_cooked, 5);
         ItemFood.setCookingResult(humanoid_flesh, humanoid_flesh_cooked, 5);
+        ItemFood.setCookingResult(bat_wing, bat_wing_cooked, 1);
+        ItemFood.setCookingResult(ocelot_meat, ocelot_meat_cooked, 3);
+        ItemFood.setCookingResult(wolf_meat, wolf_meat_cooked, 8);
     }
 }

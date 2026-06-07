@@ -60,6 +60,12 @@ item.bedrock_apple.name=基岩苹果
 item.ancient_metal_apple.name=远古金属苹果
 item.humanoid_flesh_cooked.name=熟人肉
 item.humanoid_flesh.name=人肉
+item.bat_wing.name=蝙蝠翅膀
+item.bat_wing_cooked.name=熟蝙蝠翅膀
+item.ocelot_meat.name=猫肉
+item.ocelot_meat_cooked.name=熟猫肉
+item.wolf_meat.name=狼肉
+item.wolf_meat_cooked.name=熟狼肉
 
 
 
