@@ -1,3 +1,4 @@
+/*
 package net.moddedmite.mitemod.morefood.item.food;
 
 import net.minecraft.*;
@@ -33,4 +34,4 @@ public class ItemBedrockApple extends ItemFood {
         }
     }
 
-}
+}*/

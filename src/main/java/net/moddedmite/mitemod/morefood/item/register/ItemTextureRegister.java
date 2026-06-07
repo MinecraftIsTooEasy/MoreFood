@@ -6,6 +6,7 @@ import net.moddedmite.mitemod.morefood.creativetab.MFCreativeTab;
 import net.xiaoyu233.fml.reload.event.ItemRegistryEvent;
 
 import static net.moddedmite.mitemod.morefood.MoreFoodInit.NameSpace;
+import static net.moddedmite.mitemod.morefood.item.MFMaterials.bat_wing_cooked;
 
 public class ItemTextureRegister extends MFItems {
 
@@ -59,8 +60,16 @@ public class ItemTextureRegister extends MFItems {
         event.register(NameSpace, MoreFoodInit.resourceId + "food/cooked_carrot", "cooked_carrot", cooked_carrot, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/ice_tea", "ice_tea", ice_tea, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/ancient_metal_apple", "ancient_metal_apple", ancient_metal_apple, MFCreativeTab.TAB);
+/*
         event.register(NameSpace, MoreFoodInit.resourceId + "food/bedrock_apple", "bedrock_apple", bedrock_apple, MFCreativeTab.TAB);
+*/
         event.register(NameSpace, MoreFoodInit.resourceId + "food/humanoid_flesh", "humanoid_flesh", humanoid_flesh, MFCreativeTab.TAB);
         event.register(NameSpace, MoreFoodInit.resourceId + "food/humanoid_flesh_cooked", "humanoid_flesh_cooked", humanoid_flesh_cooked, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/bat_wing", "bat_wing", bat_wing, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/bat_wing_cooked", "bat_wing_cooked", bat_wing_cooked, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/ocelot_meat", "ocelot_meat", ocelot_meat, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/ocelot_meat_cooked", "ocelot_meat_cooked", ocelot_meat_cooked, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/wolf_meat", "wolf_meat", wolf_meat, MFCreativeTab.TAB);
+        event.register(NameSpace, MoreFoodInit.resourceId + "food/wolf_meat_cooked", "wolf_meat_cooked", wolf_meat_cooked, MFCreativeTab.TAB);
     }
 }

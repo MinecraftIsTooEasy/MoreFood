@@ -55,9 +55,17 @@ public class MFItems extends Item {
     public static final ItemFood cooked_carrot = (ItemFood) (new ItemFood(getItemId("cooked_carrot"), MFMaterials.cooked_carrot, 3, 3, false, false, true, "cooked_carrot")).setUnlocalizedName("cooked_carrot");
     public static final ItemFood ice_tea = (ItemFood) (new ItemIceTea(getItemId("ice_tea"), 12, 8, 1000, false, false, false, "ice_tea")).setUnlocalizedName("ice_tea");
     public static final ItemFood ancient_metal_apple = (ItemFood) (new ItemFood(getItemId("ancient_metal_apple"), MFMaterials.ancient_metal_apple, 2, 1, -4000, false,false, true, "ancient_metal_apple")).setPlantProduct().setAlwaysEdible().setMaxStackSize(16);
+    public static final ItemFood ocelot_meat = (ItemFood) (new ItemFood(getItemId("ocelot_meat"), MFMaterials.ocelot_meat, 3, 3, 0, true, false, false, "ocelot_meat")).setAnimalProduct().setMaxStackSize(16);
+    public static final ItemFood ocelot_meat_cooked = (ItemFood) (new ItemFood(getItemId("ocelot_meat_cooked"), MFMaterials.ocelot_meat_cooked, 6, 6, 0, true, false, false, "ocelot_meat_cooked")).setAnimalProduct().setMaxStackSize(16);
+    public static final ItemFood wolf_meat = (ItemFood) (new ItemFood(getItemId("wolf_meat"), MFMaterials.wolf_meat, 5, 5, 0, true, false, false, "wolf_meat")).setAnimalProduct().setMaxStackSize(16);
+    public static final ItemFood wolf_meat_cooked = (ItemFood) (new ItemFood(getItemId("wolf_meat_cooked"), MFMaterials.wolf_meat_cooked, 10, 10, 0, true, false, false, "wolf_meat_cooked")).setAnimalProduct().setMaxStackSize(16);
+/*
     public static final ItemFood bedrock_apple = (ItemFood) (new ItemBedrockApple(getItemId("bedrock_apple"), 2, 1, 1000, false,false, true, "bedrock_apple")).setPlantProduct().setMaxStackSize(16);
+*/
     public static final ItemFood humanoid_flesh = (ItemFood) (new ItemHumanoidFlesh(getItemId("humanoid_flesh"), 4, 4, 0, true, false, false, "humanoid_flesh")).setAnimalProduct().setMaxStackSize(16);
     public static final ItemFood humanoid_flesh_cooked = (ItemFood) (new ItemHumanoidFleshCooked(getItemId("humanoid_flesh_cooked"), 8, 8, 0, true, false, false,"humanoid_flesh_cooked")).setAnimalProduct().setMaxStackSize(16);
+    public static final ItemFood bat_wing = (ItemFood) (new ItemBatWing(getItemId("bat_wing"), 4, 4, 0, true, false, false, "bat_wing")).setAnimalProduct().setMaxStackSize(16);
+    public static final ItemFood bat_wing_cooked = (ItemFood) (new ItemBatWingCooked(getItemId("bat_ming_cooked"), 8, 8, 0, true, false, false, "bat_ming_cooked")).setAnimalProduct().setMaxStackSize(16);
 
     private static int getItemId(String contentName) {
         return IdUtil.getNextItemID();

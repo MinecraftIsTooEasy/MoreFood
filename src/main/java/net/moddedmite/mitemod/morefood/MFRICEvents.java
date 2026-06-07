@@ -2,9 +2,7 @@ package net.moddedmite.mitemod.morefood;
 
 import moddedmite.rustedironcore.api.event.Handlers;
 
-import net.moddedmite.mitemod.morefood.events.IceTeaListener;
-import net.moddedmite.mitemod.morefood.events.UseTickListener;
-import net.moddedmite.mitemod.morefood.events.EntityHumanEvents;
+import net.moddedmite.mitemod.morefood.events.*;
 
 public class MFRICEvents extends Handlers {
 
@@ -15,5 +13,8 @@ public class MFRICEvents extends Handlers {
         Handlers.Tick.register(new UseTickListener());
 
         EntityHumanEvents.init();
+        EntityBatEvents.init();
+        EntityOcelotEvents.init();
+        EntityWolfEvents.init();
     }
 }

@@ -60,6 +60,12 @@ item.bedrock_apple.name=Bedrock Apple
 item.ancient_metal_apple.name=Ancient Metal Apple
 item.humanoid_flesh_cooked.name=Cooked Humanoid Flesh
 item.humanoid_flesh.name=Humanoid Flesh
+item.bat_wing.name=Bat Wing
+item.bat_wing_cooked.name=Cooked Bat Wing
+item.ocelot_meat.name=Ocelot Meat
+item.ocelot_meat_cooked.name=Cooked Ocelot Meat
+item.wolf_meat.name=Wolf Meat
+item.wolf_meat_cooked.name=Wolf Cooked Meat
 
 
 item.morefood:food/blaze_apple.info=Eating gives 1-minute resistance boost and 1-minute strength 1

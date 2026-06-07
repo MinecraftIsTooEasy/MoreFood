@@ -43,9 +43,17 @@ public class MFMaterials extends Material {
     public static Material cooked_carrot;
     public static Material ice_tea;
     public static Material ancient_metal_apple;
+/*
     public static Material bedrock_apple;
+*/
     public static Material humanoid_flesh;
     public static Material humanoid_flesh_cooked;
+    public static Material bat_wing;
+    public static Material bat_wing_cooked;
+    public static Material ocelot_meat;
+    public static Material ocelot_meat_cooked;
+    public static Material wolf_meat;
+    public static Material wolf_meat_cooked;
 
 
     public MFMaterials(EnumEquipmentMaterial enum_crafting_material) {
@@ -92,9 +100,17 @@ public class MFMaterials extends Material {
         stargazy_pie = new MaterialFood("stargazy_pie").setHarmedByPepsin();
         cooked_carrot = new MaterialFood("cooked_carrot").setHarmedByPepsin();
         ice_tea = new MaterialFood("ice_tea").setHarmedByPepsin();
+/*
         bedrock_apple = new MaterialFood("bedrock_apple").setHarmedByPepsin();
+*/
         ancient_metal_apple = new MaterialFood("ancient_metal_apple").setHarmedByPepsin();
         humanoid_flesh = new MaterialFood("humanoid_flesh").setHarmedByPepsin();
         humanoid_flesh_cooked = new MaterialFood("humanoid_flesh_cooked").setHarmedByPepsin();
+        bat_wing = new MaterialFood("bat_wing").setHarmedByPepsin();
+        bat_wing_cooked = new MaterialFood("bat_wing_cooked").setHarmedByPepsin();
+        ocelot_meat = new MaterialFood("ocelot_meat").setHarmedByPepsin();
+        ocelot_meat_cooked = new MaterialFood("ocelot_meat_cooked").setHarmedByPepsin();
+        wolf_meat = new MaterialFood("wolf_meat").setHarmedByPepsin();
+        wolf_meat_cooked = new MaterialFood("wolf_meat_cooked").setHarmedByPepsin();
     }
 }
