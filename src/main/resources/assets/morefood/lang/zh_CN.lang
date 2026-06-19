@@ -66,6 +66,7 @@ item.ocelot_meat.name=猫肉
 item.ocelot_meat_cooked.name=熟猫肉
 item.wolf_meat.name=狼肉
 item.wolf_meat_cooked.name=熟狼肉
+item.qiaolezi.name=巧乐兹
 
 
 
@@ -76,6 +77,7 @@ item.morefood:food/stargazy_pie.info=豪吃
 item.morefood:food/ice_tea.info=man!可以在下界要塞的箱子里找到也可以通过钓鱼获得
 item.morefood:food/humanoid_flesh.info=禁忌之物
 item.morefood:food/bedrock_apple.info=！？强强！？
+item.morefood:food/qiaolezi.info=三口一个
 
 
 itemGroup.MoreFood=更多食物

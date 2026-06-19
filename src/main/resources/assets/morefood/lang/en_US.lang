@@ -66,6 +66,8 @@ item.ocelot_meat.name=Ocelot Meat
 item.ocelot_meat_cooked.name=Cooked Ocelot Meat
 item.wolf_meat.name=Wolf Meat
 item.wolf_meat_cooked.name=Wolf Cooked Meat
+item.qiaolezi.name=Qiaolezi
+
 
 
 item.morefood:food/blaze_apple.info=Eating gives 1-minute resistance boost and 1-minute strength 1
@@ -75,6 +77,8 @@ item.morefood:food/stargazy_pie.info=Very good
 item.morefood:food/ice_tea.info=man! can be found in the nether fort or by fishing
 item.morefood:food/humanoid_flesh.info=Prohibited
 item.morefood:food/bedrock_apple.info=?!强强!?
+item.morefood:food/qilezi.info=Three in one
+
 
 
 itemGroup.MoreFood=More Food

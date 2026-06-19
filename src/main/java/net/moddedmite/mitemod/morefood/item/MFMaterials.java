@@ -54,6 +54,7 @@ public class MFMaterials extends Material {
     public static Material ocelot_meat_cooked;
     public static Material wolf_meat;
     public static Material wolf_meat_cooked;
+    public static Material qiaolezi;
 
 
     public MFMaterials(EnumEquipmentMaterial enum_crafting_material) {
@@ -112,5 +113,6 @@ public class MFMaterials extends Material {
         ocelot_meat_cooked = new MaterialFood("ocelot_meat_cooked").setHarmedByPepsin();
         wolf_meat = new MaterialFood("wolf_meat").setHarmedByPepsin();
         wolf_meat_cooked = new MaterialFood("wolf_meat_cooked").setHarmedByPepsin();
+        qiaolezi = new MaterialFood("qiaolezi").setHarmedByPepsin();
     }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "more_food",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "depends": {
     "fishmodloader": ">=3.2.1",
     "rusted_iron_core": ">=1.5.0"
