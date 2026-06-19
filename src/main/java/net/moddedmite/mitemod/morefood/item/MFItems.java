@@ -66,6 +66,7 @@ public class MFItems extends Item {
     public static final ItemFood humanoid_flesh_cooked = (ItemFood) (new ItemHumanoidFleshCooked(getItemId("humanoid_flesh_cooked"), 8, 8, 0, true, false, false,"humanoid_flesh_cooked")).setAnimalProduct().setMaxStackSize(16);
     public static final ItemFood bat_wing = (ItemFood) (new ItemBatWing(getItemId("bat_wing"), 4, 4, 0, true, false, false, "bat_wing")).setAnimalProduct().setMaxStackSize(16);
     public static final ItemFood bat_wing_cooked = (ItemFood) (new ItemBatWingCooked(getItemId("bat_ming_cooked"), 8, 8, 0, true, false, false, "bat_ming_cooked")).setAnimalProduct().setMaxStackSize(16);
+    public static final ItemFood qiaolezi = (ItemFood) (new ItemQiaolezi(getItemId("qiaolezi"), 3, 3, 350, false, true, false, "qiaolezi")).setAnimalProduct().setMaxStackSize(16);
 
     private static int getItemId(String contentName) {
         return IdUtil.getNextItemID();

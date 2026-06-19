@@ -65,6 +65,7 @@ public class RecipeRegister extends MFItems {
         register.registerShapedRecipe(new ItemStack(ancient_metal_apple, 1), true, "III", "IAI", "III", 'A', Item.appleRed,'I', Item.ingotAncientMetal);
 
         register.registerShapedRecipe(new ItemStack(cooked_chicken_skewer, 1), true, " C ", " M ", " S ", 'C', Item.chickenCooked, 'M', Block.mushroomBrown, 'S', Item.stick);
+        register.registerShapedRecipe(new ItemStack(qiaolezi, 3), true, " CB","SMC","TS ",'B',new ItemStack(Item.dyePowder, 1, 3),'C',Item.chocolate,'M',Item.bowlMilk,'S',Item.snowball,'T',Item.stick);
 
         /*for (Item item : Item.itemsList) {
             if (item instanceof ItemDagger dagger) {
